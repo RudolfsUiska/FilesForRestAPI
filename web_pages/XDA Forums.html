@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://forum.xda-developers.com/ -->
+<html dir="ltr" lang="en" class="algoliahome" style="overflow: visible;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Android Forum for Mobile Phones, Tablets, Watches &amp; Android App Development - XDA Forums</title>
+<meta name="description" content="The largest Android forums in the world, XDA makes mobile phones better. Apps, games, ROMs, development discussion, and more. Join the experts.">
+<meta name="keywords" content="root, help, forum, android, roms, mods, themes">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script async="" src="./XDA Forums_files/beacon.js"></script><script async="" type="text/javascript" src="./XDA Forums_files/gpt.js"></script><script type="text/javascript" async="" src="./XDA Forums_files/vglnk.js"></script><script async="" src="./XDA Forums_files/analytics.js"></script><script async="" type="text/javascript" src="./XDA Forums_files/tmnhead.js"></script><script>
+                    var xda_ad_choice = (function()
+                    {
+                        var rand = function(min, max) {
+                            return Math.random() * (max - min) + min;
+                        };
+
+                        var getRandomItem = function(list, weight) {
+                            var total_weight = weight.reduce(function (prev, cur, i, arr) {
+                                return prev + cur;
+                            });
+
+                            var random_num = rand(0, total_weight);
+                            var weight_sum = 0;
+
+                            for (var i = 0; i < list.length; i++) {
+                                weight_sum += weight[i];
+                                weight_sum = +weight_sum.toFixed(2);
+
+                                if (random_num <= weight_sum) {
+                                    return list[i];
+                                }
+                            }
+                        };
+
+                        var list = ["purch", "sortable"];
+                        //var weight = [0.99, 0.01];
+                        var weight = [1.00, 0.00];
+                        var random_item = getRandomItem(list, weight);
+
+                        return random_item;
+                    })();
+
+                    // Override until ready
+                    //xda_ad_choice = "purch";
+
+                    if(location.hash == "#xda_ad_test")
+                    {
+                        xda_ad_choice = "sortable";
+                    }
+
+                    window.adBlockDetect = (function()
+                    {
+                        var enabled;
+
+                        var callback = function(args)
+                        {
+                            if(args.length == 1 && typeof args[0] === "function")
+                            {
+                                args[0](enabled);
+                            }
+                        };
+
+                        var poll = function(args)
+                        {
+                            if(typeof enabled === "undefined")
+                            {
+                                // Wait for check function to complete
+                                setTimeout(function()
+                                {
+                                    poll(args);
+                                }, 105);
+                                return;
+                            }
+                            // Check completed, do callback
+                            callback(args);
+                        };
+
+                        (function()
+                        {
+                            // Assess adblock usage
+                            var test = document.createElement("div");
+                            test.innerHTML = "&nbsp;";
+                            test.className = "adonis-placeholder";
+                            document.documentElement.appendChild(test);
+                            window.setTimeout(function()
+                            {
+                                if (test.offsetHeight === 0)
+                                {
+                                    enabled = true;
+                                }
+                                else
+                                {
+                                    enabled = false;
+                                }
+                                test.remove();
+                            }, 100);
+                        })();
+
+                        return function()
+                        {
+                            poll(arguments);
+                        };
+                    })();
+            </script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="theme-color" content="#de7300">
+<meta name="msapplication-TileColor" content="#de7300">
+<meta property="fb:admins" content="9336956">
+<!--<base href="https://forum.xda-developers.com/">--><base href=".">
+<link href="./XDA Forums_files/css" rel="stylesheet" type="text/css">
+<link href="./XDA Forums_files/2015.min.css" rel="stylesheet" type="text/css">
+<link href="./XDA Forums_files/topbar.css" rel="stylesheet" type="text/css">
+<link href="./XDA Forums_files/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+    //if(typeof console === "undefined") { var console = { log: function (logMsg) { } }; }
+    //console.firebug = false;
+</script>
+<!--[if lt IE 9]>
+<script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script data-cfasync="false" type="text/javascript" src="./XDA Forums_files/jquery.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" data-cfasync="false">
+    var tmntag = tmntag || {};
+    tmntag.cmd = tmntag.cmd || [];
+    (function() {
+        var tmnhead = document.createElement('script');
+        tmnhead.async = true;
+        tmnhead.type = 'text/javascript';
+        tmnhead.src =
+            ('https:'==document.location.protocol?'https:':'http:')+'//ads.servebom.com/tmnhead.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(tmnhead, node);
+    })();
+
+
+    <!--
+    var SESSIONURL = "";
+    var SECURITYTOKEN = "guest";
+    var IMGDIR_MISC = "//cdn-cf-1.xda-developers.com/images/2015/misc";
+    var vb_disable_ajax = parseInt("0", 10);
+    var stylevarcdn1 = '//cdn-cf-1.xda-developers.com/';
+    var styleid = 21;
+    var is_mobile = 0;
+    // -->
+</script>
+<script data-cfasync="false" type="text/javascript" src="./XDA Forums_files/2015.head.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="xda-developers RSS Feed" href="https://forum.xda-developers.com/external.php?type=RSS2">
+<script data-cfasync="false">
+
+    if ($.cookie('xda_adtest') != undefined) {
+        var xda_adtest = $.cookie('xda_adtest');
+    } else {
+        var xda_adtest = 3;
+    }
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12268453-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('set', 'dimension1', 'Yes'); //Sidebar Showing
+    ga('set', 'dimension2', 'No'); //Logged In
+    ga('set', 'dimension3', '21'); //Style ID
+    ga('set', 'dimension5', xda_adtest); //Adtest
+    ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" data-cfasync="false">
+        Shadowbox.init({
+            // let's skip the automatic setup because we don't have any
+            // properly configured link elements on the page
+            skipSetup: true
+        });
+    </script>
+
+<link rel="shortcut icon" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cdn-cf-4.xda-developers.com/images/2015/favicons/favicon-16x16.png" sizes="16x16">
+<meta name="msapplication-TileColor" content="#e67800">
+<meta name="msapplication-TileImage" content="//cdn-cf-4.xda-developers.com/images/2015/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="//cdn-cf-4.xda-developers.com/images/2015/favicons/browserconfig.xml">
+</head>
+<body class="min-width-728 logged-out algoliasearch algoliasearchhome" style="overflow: inherit; position: static;">
+
+<header class="topbar logged-out" role="banner">
+<div class="topbar-main">
+
+<a href="https://forum.xda-developers.com/" title="XDA Forum Home" class="xda-logo-wrap">
+<img src="./XDA Forums_files/xda-logo_newcolors.svg" alt="XDA Developers" width="207" class="xda-logo" title="XDA Developers">
+</a>
+
+<nav class="navigation" rol="navigation">
+<ul class="nav">
+<li class="nav-item" id="navnews">
+<span class="nav-target" data-dropdown-target="">News <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="10" height="10"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></svg></span>
+<div class="nav-dropdown" data-posts=""><ul class="nav-posts"><li><a href="https://www.xda-developers.com/firefox-66-block-autoplaying-videos-scroll-anchoring/"><img data-source="https://www.xda-developers.com/files/2018/08/Mozilla-Firefox-Logo-150x150.png" src="./XDA Forums_files/Mozilla-Firefox-Logo-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Firefox 66 blocks autoplaying videos by default and introduces scroll anchoring for smoother scrolling</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/google-fined-1-5-billion-eu-adsense/"><img data-source="https://www.xda-developers.com/files/2019/03/Google-EU-150x150.png" src="./XDA Forums_files/Google-EU-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Google fined €1.5 billion by EU for restricting ad competitors</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/moto-z4-renders-48mp-camera-snapdragon-855/"><img data-source="https://www.xda-developers.com/files/2019/03/moto-z4-render-150x150.png" src="./XDA Forums_files/moto-z4-render-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Motorola Moto Z4 leak reveals small notch, Moto Mod support, and possibly in-display fingerprint scanner</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/franco-kernel-manager-4-0/"><img data-source="https://www.xda-developers.com/files/2019/03/franco-kernel-updater-featured-150x150.png" src="./XDA Forums_files/franco-kernel-updater-featured-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Franco Kernel Manager receives a big overhaul in version 4.0</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/android-devices-europe-default-browser-search-provider/"><img data-source="https://www.xda-developers.com/files/2018/07/European-Commission-Sends-Formal-Antitrust-Complaint-to-Google-150x150.jpg" src="./XDA Forums_files/European-Commission-Sends-Formal-Antitrust-Complaint-to-Google-150x150.jpg" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Android devices sold in Europe will ask the user which browser and search provider they want to use</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/how-to-become-a-certified-it-pro-with-this-training-bundle/"><img data-source="https://www.xda-developers.com/files/2019/03/sale_16147_primary_image_wide-150x150.jpg" src="./XDA Forums_files/sale_16147_primary_image_wide-150x150.jpg" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>How to Become a Certified IT Pro with This Training Bundle</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-mi-a2-lite-pixel-experience-paranoid-android-port-android-pie/"><img data-source="https://www.xda-developers.com/files/2018/11/MI-A2-Lite_2-150x150.png" src="./XDA Forums_files/MI-A2-Lite_2-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Xiaomi Mi A2 Lite gets Pixel Experience and Paranoid Android ports based on Android 9 Pie</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/google-doodle-search-bar-widget/"><img data-source="https://www.xda-developers.com/files/2019/03/Google-Doodle_1-150x150.png" src="./XDA Forums_files/Google-Doodle_1-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Google Doodle is showing up on the search bar for some users</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-redmi-note-7-india-go-kernel-source/"><img data-source="https://www.xda-developers.com/files/2019/03/Xiaomi-Redmi-Note-7-India-Feature-Image_13-150x150.png" src="./XDA Forums_files/Xiaomi-Redmi-Note-7-India-Feature-Image_13-150x150.webp" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Xiaomi Redmi Note 7 (India) and Redmi Go kernel sources are now available</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-global-expansion-india-europe-success/"><img data-source="https://www.xda-developers.com/files/2019/01/Xiaomi-Mi-Store-UK-150x150.jpg" src="./XDA Forums_files/Xiaomi-Mi-Store-UK-150x150.jpg" alt="" width="60" height="60" class=""><div class="nav-post-main"><h4>Xiaomi’s global expansion will broaden following success in India and Europe</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li></ul></div>
+</li>
+<li class="nav-item" id="navforums">
+<span class="nav-target nav-target--highlight" data-dropdown-target="">Forums <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="10" height="10"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></svg></span>
+<div class="nav-dropdown nav-dropdown--forum has-sections has-sections--triple">
+<a href="https://forum.xda-developers.com/" class="forum-home" title="Android and Mobile Phone Development"><svg class="icon-home"><use xlink:href="#iconz-home"></use></svg> Forum Home</a>
+<nav class="nav-section">
+<h3 class="nav-heading">Top Devices</h3>
+<div data-nav-list="top_devices"><ul class="nav-dropdown-list"><li><a href="https://forum.xda-developers.com/oneplus-6t">OnePlus 6T</a></li><li><a href="https://forum.xda-developers.com/galaxy-note-9">Galaxy Note9</a></li><li><a href="https://forum.xda-developers.com/pixel-3-xl">Pixel 3 XL</a></li><li><a href="https://forum.xda-developers.com/poco-f1">Xiaomi Pocophone F1</a></li></ul></div>
+</nav>
+<nav class="nav-section">
+<h3 class="nav-heading">New Devices</h3>
+<div data-nav-list="new_devices"><ul class="nav-dropdown-list"><li><a href="https://forum.xda-developers.com/razer-phone-2">Razer Phone 2</a></li><li><a href="https://forum.xda-developers.com/oneplus-6t">OnePlus 6T</a></li><li><a href="https://forum.xda-developers.com/honor-view-20">Honor View20</a></li><li><a href="https://forum.xda-developers.com/mate-20-pro">Huawei Mate 20 Pro</a></li></ul></div>
+</nav>
+<nav class="nav-section">
+<h3 class="nav-heading">Topics</h3>
+<div data-nav-list="topics"><ul class="nav-dropdown-list"><li><a href="https://forum.xda-developers.com/android-auto/">Android Auto</a></li><li><a href="https://forum.xda-developers.com/android/software-hacking/">Android Mods</a></li><li><a href="https://forum.xda-developers.com/android-tv/">Android TV</a></li><li><a href="https://forum.xda-developers.com/android/apps-games/">Apps &amp; Games</a></li><li><a href="https://forum.xda-developers.com/android/themes/">Themes</a></li><li><a href="https://forum.xda-developers.com/wear-os/">Wear OS</a></li><li><a href="https://forum.xda-developers.com/smartwatch/">Smartwatches</a></li><li><a href="https://forum.xda-developers.com/windows-10/">Windows 10</a></li></ul></div>
+</nav>
+</div>
+</li>
+<li class="nav-item" id="navdevices">
+<span class="nav-target" data-dropdown-target="">Devices <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="10" height="10"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></svg></span>
+<div class="nav-dropdown nav-dropdown--wide" data-vendors=""><ul class="nav-flyout-wrap"><li><a href="https://www.xda-developers.com/tag/asus/">Asus<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/asus-zenfone-max-pro-m1-m2-max-m2-android-pie/"><img data-source="https://www.xda-developers.com/files/2019/02/zenfone-pie-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>ASUS promises an Android Pie update for the ZenFone Max Pro M1, M2, and Max M2 by April 15th</h4><p class="nav-posts-date">Mar 18, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/asus-zenfone-max-pro-m1-android-pie-beta/"><img data-source="https://www.xda-developers.com/files/2019/02/zenfone-pie-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>[Update: Rolling out] ASUS opens an Android Pie beta for the ZenFone Max Pro M1</h4><p class="nav-posts-date">Mar 7, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/asus-zenfone-max-plus-m2-shot-appear-online/"><img data-source="https://www.xda-developers.com/files/2019/03/asus-zenfone-max-plus-m2-max-shot-pictures_1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>ASUS ZenFone Max Plus M2, ZenFone Max Shot with triple rear cameras, appear online</h4><p class="nav-posts-date">Mar 2, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/asus-zenfone-android-pie-upgrade-plans/"><img data-source="https://www.xda-developers.com/files/2018/06/asus-light-green-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>ASUS announces its Android Pie upgrade plan for ZenFone smartphones</h4><p class="nav-posts-date">Feb 27, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/asus/" class="nav-flyout-more">More Articles on Asus</a></div></a></li><li><a href="https://www.xda-developers.com/tag/essential/">Essential<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/march-2019-android-security-pixel-essential/"><img data-source="https://www.xda-developers.com/files/2019/02/android-pie-security-150x150.jpeg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>March 2019 security patches released for Google Pixel devices and Essential Phone</h4><p class="nav-posts-date">Mar 4, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/paranoid-android-beta-xiaomi-redmi-note-5-pro-essential-phone-sony-xperia-x-compact/"><img data-source="https://www.xda-developers.com/files/2019/01/Paranoid-Android-Android-Pie-feature-image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>[Update: More Devices] Paranoid Android gets new features on the Xiaomi Redmi Note 5 Pro, Essential Phone, and several Sony phones</h4><p class="nav-posts-date">Feb 23, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/february-2019-android-security-update-pixel-essential/"><img data-source="https://www.xda-developers.com/files/2019/02/android-pie-security-150x150.jpeg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>February 2019 security patches are out for the Google Pixel and Essential Phone</h4><p class="nav-posts-date">Feb 4, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/paranoid-android-android-pie-rom-xiaomi-poco-f1-xiaomi-mi-8-xiaomi-mi-6-xiaomi-mi-5-xiaomi-mi-mix-2s/"><img data-source="https://www.xda-developers.com/files/2019/01/Paranoid-Android-Android-Pie-feature-image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>[Update: Essential Phone too] Paranoid Android is back with Android Pie ROMs for the Xiaomi POCO F1, Mi 8/6/5, and Mix 2S</h4><p class="nav-posts-date">Jan 9, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/essential/" class="nav-flyout-more">More Articles on Essential</a></div></a></li><li><a href="https://www.xda-developers.com/tag/google/">Google<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/google-fined-1-5-billion-eu-adsense/"><img data-source="https://www.xda-developers.com/files/2019/03/Google-EU-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Google fined €1.5 billion by EU for restricting ad competitors</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/android-devices-europe-default-browser-search-provider/"><img data-source="https://www.xda-developers.com/files/2018/07/European-Commission-Sends-Formal-Antitrust-Complaint-to-Google-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Android devices sold in Europe will ask the user which browser and search provider they want to use</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/google-doodle-search-bar-widget/"><img data-source="https://www.xda-developers.com/files/2019/03/Google-Doodle_1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Google Doodle is showing up on the search bar for some users</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/google-stadia-game-streaming-service/"><img data-source="https://www.xda-developers.com/files/2019/03/Stadia_Logo_Feature_Image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Google Stadia is a game streaming service for Android, Chromecasts, Chrome, and more</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/google/" class="nav-flyout-more">More Articles on Google</a></div></a></li><li><a href="https://www.xda-developers.com/tag/honor/">Honor<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/samsung-galaxy-s10-vs-honor-view-20/"><img data-source="https://www.xda-developers.com/files/2019/03/galaxy-s10-vs-honor-v20-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Samsung Galaxy S10 vs Honor View 20: Is it worth spending ₹30,000 more?</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/here-are-some-features-we-actually-love-in-emui/"><img data-source="https://www.xda-developers.com/files/2019/03/emui9featured-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Here Are Some Features We Actually Love in EMUI</h4><p class="nav-posts-date">Mar 14, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/honor-10i-leak-32mp-front-triple-rear-camera-kirin-710/"><img data-source="https://www.xda-developers.com/files/2019/03/imgonline-com-ua-FrameBlurred-YoJyY6dQd7l1Go-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Honor 10i leaks with a 32MP front camera, triple rear cameras, and Kirin 710</h4><p class="nav-posts-date">Mar 13, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/dark-android-pie-theme-huawei-honor-emui-5/"><img data-source="https://www.xda-developers.com/files/2019/03/Android-P-Dark-Theme-for-EMUI-5-Devices_1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Get a dark Android Pie theme for Huawei and Honor devices running EMUI 5+</h4><p class="nav-posts-date">Mar 11, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/honor/" class="nav-flyout-more">More Articles on Honor</a></div></a></li><li><a href="https://www.xda-developers.com/tag/htc/">HTC<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/htc-u12-u11-plus-android-pie-q2-2019/"><img data-source="https://www.xda-developers.com/files/2018/09/android-pie-system-tracing-1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>HTC U12+, U11, and U11+ now expected to get Android Pie in Q2 2019</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/htc-brand-license-india-micromax-lava-karbonn/"><img data-source="https://www.xda-developers.com/files/2018/08/HTC-logo-e1452260480901-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>HTC may license its brand to Indian smartphone makers Micromax, Lava or Karbonn</h4><p class="nav-posts-date">Mar 5, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/chrome-os-instant-tethering-more-chromebooks-phones/"><img data-source="https://www.xda-developers.com/files/2018/07/detachable-chromebook-tablet-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Chrome OS Instant Tethering now supports 15 more Chromebooks and 30 more Android smartphones</h4><p class="nav-posts-date">Feb 4, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/phone-software-killing-apps-background/"><img data-source="https://www.xda-developers.com/files/2019/01/Screenshot-2019-01-03-at-5.08.59-PM-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>PSA: Your phone’s software may be killing your favorite apps in the background</h4><p class="nav-posts-date">Jan 4, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/htc/" class="nav-flyout-more">More Articles on HTC</a></div></a></li><li><a href="https://www.xda-developers.com/tag/huawei/">Huawei<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/huawei-p30-pro-p30-camera-specs-colors/"><img data-source="https://www.xda-developers.com/files/2019/03/Huawei-P30-Pro-1552598052-0-0-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Huawei P30 and P30 Pro leaked specs reveal powerful camera setups</h4><p class="nav-posts-date">Mar 15, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/huawei-india-emui-9-beta-test-p20-lite-huawei-y9/"><img data-source="https://www.xda-developers.com/files/2018/12/EMUI-logo-featured-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Huawei India is recruiting EMUI 9 beta testers for the P20 Lite and Y9</h4><p class="nav-posts-date">Mar 15, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/huawei-mate-20-pro-review/"><img data-source="https://www.xda-developers.com/files/2019/03/Huawei-Mate-20-Pro-Review-Cameras-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Huawei Mate 20 Pro Review: 2018’s Best Still Impresses in 2019</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/dark-android-pie-theme-huawei-honor-emui-5/"><img data-source="https://www.xda-developers.com/files/2019/03/Android-P-Dark-Theme-for-EMUI-5-Devices_1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Get a dark Android Pie theme for Huawei and Honor devices running EMUI 5+</h4><p class="nav-posts-date">Mar 11, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/huawei/" class="nav-flyout-more">More Articles on Huawei</a></div></a></li><li><a href="https://www.xda-developers.com/tag/lenovo/">Lenovo<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/moto-z4-renders-48mp-camera-snapdragon-855/"><img data-source="https://www.xda-developers.com/files/2019/03/moto-z4-render-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Motorola Moto Z4 leak reveals small notch, Moto Mod support, and possibly in-display fingerprint scanner</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/lenovo-yoga-tab-3-plus-lineageos-16-android-pie/"><img data-source="https://www.xda-developers.com/files/2018/08/LineageOS-15.1-1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Lenovo Yoga Tab 3 Plus gets LineageOS 16 based on Android Pie</h4><p class="nav-posts-date">Mar 13, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/lineageos-16-android-pie/"><img data-source="https://www.xda-developers.com/files/2019/01/LineageOS-16-Hero-Image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>LineageOS 16 based on Android Pie is here for the Xiaomi POCO F1, OnePlus 5/5T, Honor View 10, and more</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/lenovo-tab-v7-budget-phone-specifications/"><img data-source="https://www.xda-developers.com/files/2019/02/Lenovo_Tab_V7_featured-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>The Lenovo Tab V7 is a budget phone with a huge 6.9″ display and 5180mAh battery</h4><p class="nav-posts-date">Feb 25, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/lenovo/" class="nav-flyout-more">More Articles on Lenovo</a></div></a></li><li><a href="https://www.xda-developers.com/tag/lg/">LG<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/record-audio-lg-fm-radio-app/"><img data-source="https://www.xda-developers.com/files/2018/12/LG-logo-featured-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>How to record audio in LG’s built-in FM radio app</h4><p class="nav-posts-date">Mar 11, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/huawei-mate-x-lg-v50-zte-axon-10-pro-and-samsung-galaxy-s10-forums/"><img data-source="https://www.xda-developers.com/files/2019/03/v50-x-s10-axon-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Huawei Mate X, LG V50, ZTE Axon 10 Pro, and Samsung Galaxy S10+ forums are now open</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/lineageos-16-android-pie/"><img data-source="https://www.xda-developers.com/files/2019/01/LineageOS-16-Hero-Image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>LineageOS 16 based on Android Pie is here for the Xiaomi POCO F1, OnePlus 5/5T, Honor View 10, and more</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/future-lg-v-series-5g-g-series-4g/"><img data-source="https://www.xda-developers.com/files/2019/02/LG-G8-ThinQ-Feature-Image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Future LG V-series will be 5G while G-series will remain 4G</h4><p class="nav-posts-date">Feb 27, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/lg/" class="nav-flyout-more">More Articles on LG</a></div></a></li><li><a href="https://www.xda-developers.com/tag/motorola/">Motorola<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/moto-z4-renders-48mp-camera-snapdragon-855/"><img data-source="https://www.xda-developers.com/files/2019/03/moto-z4-render-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Motorola Moto Z4 leak reveals small notch, Moto Mod support, and possibly in-display fingerprint scanner</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/motorola-one-vision-features-specifications/"><img data-source="https://www.xda-developers.com/files/2017/05/Motorola-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Source: The Motorola One Vision is an Android One phone with the Exynos 9610</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/verizon-moto-z3-5g-moto-mod-pre-order/"><img data-source="https://www.xda-developers.com/files/2018/08/moto-z-gen-3-fullbleed-5g_m-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Verizon Moto Z3’s 5G Mod goes on sale tomorrow for <ccc title="$350" class="ccc--converted" style="font-size: inherit; display: inline; color: inherit;">€308.32</ccc></h4><p class="nav-posts-date">Mar 13, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/motorola-razr-snapdragon-710-3d-hdr-video/"><img data-source="https://www.xda-developers.com/files/2019/03/Motorola-Razr-Logo-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Motorola’s foldable Razr phone specifications include the Qualcomm Snapdragon 710</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/motorola/" class="nav-flyout-more">More Articles on Motorola</a></div></a></li><li><a href="https://www.xda-developers.com/tag/nokia/">Nokia<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/nokia-5-1-android-pie-update/"><img data-source="https://www.xda-developers.com/files/2018/05/nokia-51-1-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>The Nokia 5.1 is now getting the Android Pie update</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/nokia-3-1-android-pie-update/"><img data-source="https://www.xda-developers.com/files/2018/10/nokia-3.1-plus-feature-image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Nokia 3.1 is HMD Global’s latest smartphone to get Android Pie</h4><p class="nav-posts-date">Mar 15, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/nokia-9-pureview-after-one-week/"><img data-source="https://www.xda-developers.com/files/2019/03/nokia-9-pureview-zoom-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Nokia 9 with 5 Cameras: First Impressions After One Week</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/nokia-2-upgrade-android-oreo/"><img data-source="https://www.xda-developers.com/files/2017/10/Nokia-2-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Nokia 2 users can now upgrade to Android Oreo if they choose</h4><p class="nav-posts-date">Mar 6, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/nokia/" class="nav-flyout-more">More Articles on Nokia</a></div></a></li><li><a href="https://www.xda-developers.com/tag/oneplus/">OnePlus<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/oxygenos-ui-future-oneplus-device/"><img data-source="https://www.xda-developers.com/files/2019/03/picture-hero-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Here’s how OxygenOS may change on a future OnePlus device</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/oxygenos-open-beta-oneplus-5-5t-6-6t-march-security-patch/"><img data-source="https://www.xda-developers.com/files/2019/03/OxygenOS-Open-Beta-Logo-Android-Pie-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>OnePlus 5/5T and OnePlus 6/6T get new OxygenOS Open Betas with March security patches</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/oneplus-launches-oxygenos-product-manager-challenge/"><img data-source="https://www.xda-developers.com/files/2019/02/OOS_Forum-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>[Update: Winner picked] OnePlus launches the OxygenOS Product Manager Challenge</h4><p class="nav-posts-date">Mar 11, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/t-mobile-oneplus-6t-update-vilte-rcs-support/"><img data-source="https://www.xda-developers.com/files/2018/11/OnePlus-6T_3-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>T-Mobile OnePlus 6T’s latest update brings ViLTE and RCS messaging support</h4><p class="nav-posts-date">Mar 9, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/oneplus/" class="nav-flyout-more">More Articles on OnePlus</a></div></a></li><li><a href="https://www.xda-developers.com/tag/oppo/">OPPO<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/oppo-announces-coloros-6-coming-to-the-r17-r15-r11-and-more/"><img data-source="https://www.xda-developers.com/files/2019/03/coloros-6-featured-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>OPPO announces ColorOS 6, coming to the R17, R15, R11, and more</h4><p class="nav-posts-date">Mar 18, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/oppo-reno-smartphone-snapdragon-855-10x-zoom/"><img data-source="https://www.xda-developers.com/files/2019/03/Reno-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>OPPO’s new Reno smartphone may launch with the Snapdragon 855 and 10x zoom</h4><p class="nav-posts-date">Mar 12, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/realme-3-nightscape-feature-realme-1-2-pro/"><img data-source="https://www.xda-developers.com/files/2019/02/realme-3-twitter-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Realme 1, Realme 2, and Realme 2 Pro will get the Realme 3’s new Nightscape feature</h4><p class="nav-posts-date">Mar 8, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/oppo-f11-pro-pop-up-camera-48mp-camera/"><img data-source="https://www.xda-developers.com/files/2019/03/OPPO-F11-Pro-announced-with-pop-up-camera-and-48MP-camera-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>OPPO F11 Pro announced with pop-up camera and 48MP camera</h4><p class="nav-posts-date">Mar 5, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/oppo/" class="nav-flyout-more">More Articles on OPPO</a></div></a></li><li><a href="https://www.xda-developers.com/tag/razer/">Razer<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/razer-phone-3-not-cancelled-report/"><img data-source="https://www.xda-developers.com/files/2017/11/Razer-Phone-Feature-Image-8-Red-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>The Razer Phone 3 may not have been cancelled, claims new report</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/razer-chroma-wave-lighting-razer-phone-2/"><img data-source="https://www.xda-developers.com/files/2018/10/razer-phone-2-header-1200x675-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Razer Chroma gets an update with a Wave lighting preset for the Razer Phone 2</h4><p class="nav-posts-date">Mar 15, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/razer-phone-2-android-pie-update/"><img data-source="https://www.xda-developers.com/files/2020/02/razer-phone-2-pie-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>[Update: Rolling Out] The Razer Phone 2’s Android Pie update rolls out next week for unlocked devices</h4><p class="nav-posts-date">Feb 28, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/razer-phone-2-android-pie-4k60fps-video-recording/"><img data-source="https://www.xda-developers.com/files/2018/11/razer-phone-2-video-review-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Razer Phone 2’s Android Pie update adds 4k60FPS video recording</h4><p class="nav-posts-date">Feb 22, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/razer/" class="nav-flyout-more">More Articles on Razer</a></div></a></li><li><a href="https://www.xda-developers.com/tag/samsung/">Samsung<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/samsung-galaxy-s10-vs-honor-view-20/"><img data-source="https://www.xda-developers.com/files/2019/03/galaxy-s10-vs-honor-v20-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Samsung Galaxy S10 vs Honor View 20: Is it worth spending ₹30,000 more?</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/samsung-galaxy-s10e-black-shark-2-xda-forums/"><img data-source="https://www.xda-developers.com/files/2019/03/galaxy-s10e-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Samsung Galaxy S10e and Xiaomi Black Shark 2 forums are now open</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/samsung-galaxy-fold-esim-support/"><img data-source="https://www.xda-developers.com/files/2019/02/Samsung_Galaxy_Fold_Render-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Samsung Galaxy Fold video leak hints the folding phone may have eSIM support</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/exynos-samsung-galaxy-s10-rooted-magisk/"><img data-source="https://www.xda-developers.com/files/2018/07/Magisk-Feature-Image-Blue-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>The Exynos Samsung Galaxy S10+ has been rooted with Magisk</h4><p class="nav-posts-date">Mar 19, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/samsung/" class="nav-flyout-more">More Articles on Samsung</a></div></a></li><li><a href="https://www.xda-developers.com/tag/sony/">Sony<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/sony-xperia-1-alpha-style-cameras/"><img data-source="https://www.xda-developers.com/files/2019/03/xperia-1-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Here’s why the Sony Xperia 1 is the first Sony phone with Alpha-style cameras</h4><p class="nav-posts-date">Mar 5, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/sony-xperia-10-launcher-ported/"><img data-source="https://www.xda-developers.com/files/2019/02/Sony-Xperia-10-feature-image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Sony Xperia 10’s launcher app gets ported to any Xperia phone running Android Pie</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/lineageos-16-android-pie/"><img data-source="https://www.xda-developers.com/files/2019/01/LineageOS-16-Hero-Image-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>LineageOS 16 based on Android Pie is here for the Xiaomi POCO F1, OnePlus 5/5T, Honor View 10, and more</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/sony-xperia-1-xperia-10-plus-forums/"><img data-source="https://www.xda-developers.com/files/2019/02/Sony-Xperia-10-image-3-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Sony Xperia 1, Xperia 10, and Xperia 10 Plus forums are open</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/sony/" class="nav-flyout-more">More Articles on Sony</a></div></a></li><li><a href="https://www.xda-developers.com/tag/vivo/">Vivo<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/google-assistant-digital-wellbeing-google-lens-mwc/"><img data-source="https://www.xda-developers.com/files/2019/02/Google-MWC-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Google announces new smartphones will have Google Assistant buttons, Digital Wellbeing expanding to the Moto G7, and Google Lens suggestions availability on the LG G8</h4><p class="nav-posts-date">Feb 25, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-mi-9-mi-9-se-vivo-v15-pro-and-nubia-red-magic-mars-forums-are-open/"><img data-source="https://www.xda-developers.com/files/2019/02/Xiaomi-Mi-9-SE_1-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Xiaomi Mi 9, Mi 9 SE, Vivo V15 Pro, and Nubia Red Magic Mars forums are open</h4><p class="nav-posts-date">Feb 21, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/vivo-v15-pro-hands-on-first-impressions-review/"><img data-source="https://www.xda-developers.com/files/2019/02/vivo-v15-pro-hands-on-feat-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Vivo V15 Pro Hands On: 48MP Triple Cameras, Pop-Up Selfie Camera, and Beautiful Build Make an Attractive Combo</h4><p class="nav-posts-date">Feb 21, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/vivo-v15pro-india-specifications/"><img data-source="https://www.xda-developers.com/files/2019/02/Vivo-V15-Pro-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Vivo V15Pro launches in India with a 32MP pop-up front camera, 48MP rear triple camera setup, in-display fingerprint scanner, and Qualcomm Snapdragon 675</h4><p class="nav-posts-date">Feb 20, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/vivo/" class="nav-flyout-more">More Articles on Vivo</a></div></a></li><li><a href="https://www.xda-developers.com/tag/xiaomi/">Xiaomi<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/xiaomi-mi-a2-lite-pixel-experience-paranoid-android-port-android-pie/"><img data-source="https://www.xda-developers.com/files/2018/11/MI-A2-Lite_2-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Xiaomi Mi A2 Lite gets Pixel Experience and Paranoid Android ports based on Android 9 Pie</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-redmi-note-7-india-go-kernel-source/"><img data-source="https://www.xda-developers.com/files/2019/03/Xiaomi-Redmi-Note-7-India-Feature-Image_13-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Xiaomi Redmi Note 7 (India) and Redmi Go kernel sources are now available</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-global-expansion-india-europe-success/"><img data-source="https://www.xda-developers.com/files/2019/01/Xiaomi-Mi-Store-UK-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Xiaomi’s global expansion will broaden following success in India and Europe</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/xiaomi-mi-a1-lineageos-16-android-pie/"><img data-source="https://www.xda-developers.com/files/2018/01/xiaomi-mi-a1-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Xiaomi Mi A1 gets support for LineageOS 16 based on Android Pie</h4><p class="nav-posts-date">Mar 20, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/xiaomi/" class="nav-flyout-more">More Articles on Xiaomi</a></div></a></li><li><a href="https://www.xda-developers.com/tag/zte/">ZTE<div class="nav-flyout"><ul class="nav-flyout-list"><li><a href="https://www.xda-developers.com/nubia-alpha-smartwatch-smartphone/"><img data-source="https://www.xda-developers.com/files/2019/03/IMG_20190227_123910-150x150.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>The Nubia Alpha is a smartwatch pretending to be a smartphone</h4><p class="nav-posts-date">Mar 4, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/huawei-mate-x-lg-v50-zte-axon-10-pro-and-samsung-galaxy-s10-forums/"><img data-source="https://www.xda-developers.com/files/2019/03/v50-x-s10-axon-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>Huawei Mate X, LG V50, ZTE Axon 10 Pro, and Samsung Galaxy S10+ forums are now open</h4><p class="nav-posts-date">Mar 1, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/zte-axon-7-update-bring-back-google-daydream-vr/"><img data-source="https://www.xda-developers.com/files/2017/01/ZTE-Axon-7-Feature-Image-XDA-Yellow-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>ZTE will release an update to the Axon 7 to bring back Google Daydream VR support</h4><p class="nav-posts-date">Feb 27, 2019</p></div></a></li><li><a href="https://www.xda-developers.com/zte-axon-10-pro-5g-flagship-blade-v10-vita/"><img data-source="https://www.xda-developers.com/files/2019/02/ZTE-Axon-10-Pro-5G-150x150.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAVklEQVR42u3PMQEAAAQAMPqnpIRXAwVsDZZdNfFICgsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC18WozfYkZxfUccAAAAASUVORK5CYII=" alt="" width="60" height="60" class="lazy"><div class="nav-post-main"><h4>ZTE unveils the ZTE Axon 10 Pro 5G flagship, ZTE Blade V10 and ZTE Blade V10 Vita</h4><p class="nav-posts-date">Feb 25, 2019</p></div></a></li></ul><a href="https://www.xda-developers.com/tag/zte/" class="nav-flyout-more">More Articles on ZTE</a></div></a></li></ul>
+<a href="https://www.xda-developers.com/search2/" class="nav-dropdown-more">More</a>
+</div>
+</li>
+<li class="nav-item" id="navtopics">
+<span class="nav-target" data-dropdown-target="">Topics <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="10" height="10"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></svg></span>
+<div class="nav-dropdown has-sections">
+<nav class="nav-section">
+<h3 class="nav-heading">Features</h3>
+<div data-nav-list="features"><ul class="nav-dropdown-list"><li><a href="https://www.xda-developers.com/category/analysis/">Analysis/Editorials</a></li><li><a href="https://www.xda-developers.com/tag/androidpie/">Android Pie</a></li><li><a href="https://www.xda-developers.com/tag/apk-teardown/">App Teardowns</a></li><li><a href="https://www.xda-developers.com/tag/chrome-os/">Chromebooks</a></li><li><a href="https://www.xda-developers.com/tag/development/">Development</a></li><li><a href="https://www.xda-developers.com/tag/exclusive/">Exclusives</a></li><li><a href="https://www.xda-developers.com/tag/google/">Google Products</a></li><li><a href="https://www.xda-developers.com/tag/qualcomm/">Qualcomm</a></li><li><a href="https://www.xda-developers.com/tag/review/">Reviews</a></li><li><a href="https://www.xda-developers.com/category/announcements/">Site Announcements</a></li><li><a href="https://www.xda-developers.com/tag/google-wear-os/">Wear OS</a></li></ul></div>
+</nav>
+<nav class="nav-section">
+<h3 class="nav-heading">Customize</h3>
+<div data-nav-list="customize"><ul class="nav-dropdown-list"><li><a href="https://www.xda-developers.com/tag/lineageos/">LineageOS</a></li><li><a href="https://www.xda-developers.com/category/developments/">Mods</a></li><li><a href="https://www.xda-developers.com/category/tutorials/">Tutorials</a></li><li><a href="https://www.xda-developers.com/tag/twrp/">TWRP</a></li><li><a href="https://www.xda-developers.com/tag/xda-spotlight/">XDA Spotlight</a></li></ul></div>
+</nav>
+</div>
+</li>
+<li class="nav-item">
+<span class="nav-target" data-dropdown-target="">Best Posts <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="10" height="10"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></svg></span>
+<div class="nav-dropdown nav-dropdown--narrow" data-nav-list="best_posts"><ul class="nav-dropdown-list"><li><a href="https://www.xda-developers.com/substratum-hub/">Get Substratum</a></li><li><a href="https://www.xda-developers.com/xposed-framework-hub/">Get Xposed</a></li><li><a href="https://www.xda-developers.com/youtube-vanced-features/">Get YouTube Vanced</a></li><li><a href="https://www.xda-developers.com/what-is-adb/">How to use ADB</a></li><li><a href="https://www.xda-developers.com/magisk-hub-2/">Get Magisk</a></li><li><a href="https://www.xda-developers.com/root/">How to Root</a></li><li><a href="https://www.xda-developers.com/google-camera-port-hub/">Get Google Camera</a></li><li><a href="https://www.xda-developers.com/android-pie-android-9-port-custom-roms/">Get Android Pie ROM</a></li></ul></div>
+</li>
+</ul>
+</nav>
+<div class="topbar-right">
+
+<div class="topbar-search">
+<div class="search-trigger" data-panel-trigger="search">
+<svg class="search-img"><use xlink:href="#iconz-search"></use></svg>
+</div>
+<div class="search-form-wrap panel pannel--top-padding" data-panel="search">
+<div class="search-form-inner">
+<div class="panel-close" data-panel-trigger="search"><span>close</span></div>
+<form class="search-form" id="topnav-search-form">
+<input type="search" placeholder="Search" name="s" class="search-input-topbar" id="header_search" autocomplete="off">
+<svg class="search-clear" id="search-clear"><use xlink:href="#iconz-close"></use></svg>
+</form>
+<div class="all-results-container" id="algolia-hits"><section class="search-results search-results--suggestions">
+      <h4 class="search-results-heading">Try these searches</h4>
+      <ol class="search-results-list"><li class="search-sugg-item">Android Pie</li><li class="search-sugg-item">Note 9 Wallpaper</li><li class="search-sugg-item">How to block ads on Android</li><li class="search-sugg-item">Honor 10</li><li class="search-sugg-item">Pixel 3 XL twrp</li><li class="search-sugg-item">Magisk</li><li class="search-sugg-item">OnePlus 6T fingerprint</li></ol>
+    </section><section class="search-results search-results--advsearch">
+      <h4 class="search-results-heading">Other Search Options</h4>
+      <ol class="search-results-list"><li class="search-sugg-item"><a href="https://forum.xda-developers.com/search">Full Search Page</a></li><li class="search-sugg-item"><a href="https://forum.xda-developers.com/search.php">Advanced Forum Search</a></li></ol>
+    </section></div>
+</div>
+</div>
+</div>
+
+<div class="user-target" data-panel-trigger="user" id="user-avatar">
+<svg class="iconz-user-circle"><use xlink:href="#iconz-user"></use></svg>
+<span class="notification-alert"></span>
+</div>
+<div class="panel" data-panel="user">
+<div class="panel-close" data-panel-trigger="user"><span>close</span></div>
+
+<div class="login-form show-logged-out">
+<form class="form" action="https://forum.xda-developers.com/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<input type="text" class="form-input" name="vb_login_username" placeholder="Username">
+<input type="password" class="form-input" name="vb_login_password" placeholder="Password">
+<div class="login-form-footer">
+<label class="checkbox-label" for="cb_cookieuser_navbar">
+<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" checked=""> Remember me
+</label>
+<a href="https://forum.xda-developers.com/login.php?do=lostpw" rel="nofollow" class="login-form-forgot">Forgot password?</a>
+</div>
+<button type="submit" class="button button--wide">Log In</button>
+<input type="hidden" name="s" value="">
+<input type="hidden" name="securitytoken" value="guest">
+<input type="hidden" name="do" value="login">
+<input type="hidden" name="vb_login_md5password">
+<input type="hidden" name="vb_login_md5password_utf">
+<script async="" src="./XDA Forums_files/google-login.js"></script>
+</form>
+<p class="login-alts"><a href="https://forum.xda-developers.com/register.php">Register</a> or <a href="https://forum.xda-developers.com/social-login/google.php" id="gplus-button" rel="nofollow">Login with Google</a></p>
+</div>
+
+<div class="show-logged-in">
+<div class="panel-section user-info">
+<a href="https://forum.xda-developers.com/" class="user-info-target" id="user-info-target">
+<div id="user-info-avatar"></div>
+<div class="user-info-meta" id="user-info"></div>
+</a>
+</div>
+<div class="panel-section user-notifications">
+<h3 class="nav-heading">Notifications</h3>
+<ul class="panel-list" id="notification-list"></ul>
+</div>
+<div class="panel-section user-devices">
+<h3 class="nav-heading"><a href="https://forum.xda-developers.com/profile.php?do=editprofile">My Devices <span>(edit)</span></a></h3>
+<ul class="panel-list" id="devices-list"></ul>
+</div>
+<div class="panel-section user-utilities">
+<ul class="panel-list" id="utilities-list">
+<li><a href="https://forum.xda-developers.com/" class="logout-target" id="logout-target">Log Out</a></li>
+<li><a href="https://forum.xda-developers.com/usercp.php" class="settings-target">Settings</a></li>
+<li class="if-moderator"><a href="https://forum.xda-developers.com/rp/">Reported Posts</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="hamburger">
+<div class="hb-trigger" data-panel-trigger="hamburger">
+<div class="hb-trigger-box">
+<div class="hb-trigger-inner"></div>
+</div>
+</div>
+<div class="hb-nav panel" data-panel="hamburger">
+<nav class="panel-section">
+<h3 class="nav-heading">XDA’s Apps</h3>
+<ul class="panel-list">
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.xda.nobar" title="Navigation Gestures App" target="_blank">
+<h4 class="panel-target-heading">Nav Gestures</h4>
+<p class="panel-target-subheading">Add swipe gestures to any Android, no root</p>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.xda.onehandedmode" title="One Handed Mode App" target="_blank">
+<h4 class="panel-target-heading">One handed mode</h4>
+<p class="panel-target-subheading">Make your phone easier to use with one hand, no root</p>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.xda.labs.play" title="XDA Forum App" target="_blank">
+<h4 class="panel-target-heading">XDA Forum App</h4>
+<p class="panel-target-subheading">The best way to access XDA on your phone</p>
+</a>
+</li>
+<li>
+<a href="https://www.xda-developers.com/xda-labs/" title="XDA App Store" target="_blank">
+<h4 class="panel-target-heading">XDA Labs</h4>
+<p class="panel-target-subheading">An app store for independent developers</p>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=projekt.launcher" title="Hyperion Launcher App" target="_blank">
+<h4 class="panel-target-heading">Hyperion Launcher</h4>
+<p class="panel-target-subheading">A sweet, feature-filled launcher with a beautiful UX.</p>
+</a>
+</li>
+</ul>
+</nav>
+<nav class="panel-section">
+<h3 class="nav-heading">Sites we like</h3>
+<ul class="panel-list">
+<li>
+<a href="https://swappa.com/" class="panel-target-icon" rel="nofollow">
+<svg class="iconz-swappa"><use xlink:href="#iconz-swappa"></use></svg>
+<div>
+<h4 class="panel-target-heading">Swappa</h4>
+<p class="panel-target-subheading">XDA's official marketplace for buying and selling tech</p>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/pocketnow" class="panel-target-icon">
+<svg class="iconz-pocketnow"><use xlink:href="#iconz-pocketnow"></use></svg>
+<div>
+<h4 class="panel-target-heading">Pocketnow</h4>
+<p class="panel-target-subheading">Premium videos</p>
+</div>
+</a>
+</li>
+</ul>
+</nav>
+<nav class="panel-section">
+<h3 class="nav-heading">Social</h3>
+<ul class="panel-list panel-list--social">
+<li>
+<a href="https://twitter.com/xdadevelopers" class="panel-social-target">
+<svg class="iconz-social iconz-twitter"><use xlink:href="#iconz-twitter"></use></svg>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/xda.developers" class="panel-social-target">
+<svg class="iconz-social iconz-facebook"><use xlink:href="#iconz-facebook"></use></svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/xdadevelopers?sub_confirmation=1" class="panel-social-target">
+<svg class="iconz-social iconz-youtube"><use xlink:href="#iconz-youtube"></use></svg>
+</a>
+</li>
+<li>
+<a href="https://discord.gg/EhaMzy2" class="panel-social-target">
+<svg class="iconz-social iconz-discord"><use xlink:href="#iconz-discord"></use></svg>
+</a>
+</li>
+<li>
+<a href="https://t.me/xdadevelopershub" class="panel-social-target">
+<svg class="iconz-social iconz-telegram"><use xlink:href="#iconz-telegram"></use></svg>
+</a>
+</li>
+<li>
+<a href="https://data.xda-developers.com/portal-feed" class="panel-social-target">
+<svg class="iconz-social iconz-rss"><use xlink:href="#iconz-rss"></use></svg>
+</a>
+</li>
+</ul>
+</nav>
+<nav class="panel-section">
+<h3 class="nav-heading">Resources</h3>
+<ul class="panel-list">
+<li><a href="https://www.xda-developers.com/newsletter-signup/">Subscribe to our Newsletter</a></li>
+<li><a href="https://www.xda-developers.com/the-team/">Contact</a></li>
+<li><a href="https://www.xda-developers.com/about/">About</a></li>
+<li><a href="https://www.xda-developers.com/tip-us/" class="panel-target-highlight">Tip Us</a></li>
+</ul>
+</nav>
+ </div>
+</div>
+</div>
+</div>
+
+<nav class="tagbar">
+<ol class="tagbar-list" id="tagbar-list"><li><a href="https://www.xda-developers.com/tag/samsung-galaxy-note-9/">Galaxy Note 9</a></li><li><a href="https://www.xda-developers.com/tag/oneplus6t/">OnePlus 6T</a></li><li><a href="https://www.xda-developers.com/tag/androidpie/">Android Pie</a></li><li><a href="https://www.xda-developers.com/tag/android-q/">Android Q</a></li><li><a href="https://www.xda-developers.com/tag/honor-view20/">Honor View20</a></li><li><a href="https://forum.xda-developers.com/honor-hub/">Honor Hub</a></li><li><a href="https://www.xda-developers.com/tag/google-pixel-3/">Pixel 3</a></li><li><a href="https://www.xda-developers.com/tag/5g/">5G</a></li><li><a href="https://www.xda-developers.com/tag/lgv40/">LG V40</a></li><li><a href="https://www.xda-developers.com/tag/qualcomm-snapdragon-855/">Snapdragon 855</a></li></ol>
+</nav>
+</header>
+<div style="display:none;">
+<svg><defs></defs><symbol id="iconz-arrow-down" viewBox="0 0 50 50"><path clip-path="url(#SVGID_2_)" d="M25 41.5l-25-25 7.9-8L25 25.6 42.1 8.5l7.9 8z" fill="currentColor"></path></symbol><symbol id="iconz-close" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></symbol><symbol id="iconz-discord" viewBox="0 0 448 512"><path fill="currentColor" d="M297.22 243.2c0 15.62-11.52 28.42-26.12 28.42-14.33 0-26.1-12.8-26.1-28.42s11.51-28.42 26.1-28.42c14.6 0 26.12 12.8 26.12 28.42zm-119.56-28.42c-14.59 0-26.1 12.8-26.1 28.42s11.77 28.42 26.1 28.42c14.6 0 26.12-12.8 26.12-28.42.25-15.62-11.52-28.42-26.12-28.42zM448 52.74V512c-64.5-57-43.87-38.13-118.78-107.78l13.56 47.36H52.48C23.55 451.58 0 428.03 0 398.85V52.74C0 23.55 23.55 0 52.48 0h343.04C424.45 0 448 23.55 448 52.74zm-72.96 242.68c0-82.43-36.86-149.24-36.86-149.24-36.87-27.65-71.94-26.88-71.94-26.88l-3.58 4.1c43.52 13.3 63.74 32.5 63.74 32.5-60.81-33.33-132.24-33.33-191.23-7.42-9.47 4.35-15.1 7.42-15.1 7.42s21.24-20.22 67.32-33.53l-2.56-3.07s-35.07-.77-71.93 26.88c0 0-36.87 66.81-36.87 149.24 0 0 21.5 37.12 78.08 38.92 0 0 9.47-11.52 17.15-21.25-32.5-9.73-44.8-30.21-44.8-30.21 3.77 2.64 9.98 6.05 10.5 6.4 43.21 24.2 104.59 32.13 159.74 8.96a146.5 146.5 0 0 0 29.44-15.1s-12.8 20.99-46.33 30.46c7.68 9.73 16.9 20.74 16.9 20.74 56.57-1.8 78.33-38.92 78.33-38.92z"></path></symbol><symbol id="iconz-facebook" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></symbol><symbol id="iconz-home" viewBox="0 0 512 512"><path d="M506.56 208.06l-242.7-177.7a13.3 13.3 0 0 0-15.72 0L5.44 208.07a13.3 13.3 0 1 0 15.72 21.47L256 57.6l234.84 171.94a13.28 13.28 0 0 0 18.6-2.88 13.3 13.3 0 0 0-2.88-18.59z"></path><path d="M442.25 232.54a13.3 13.3 0 0 0-13.3 13.3V457.6H322.51V342.02c0-36.68-29.84-66.52-66.52-66.52s-66.52 29.84-66.52 66.52V457.6H83.06V245.85a13.3 13.3 0 0 0-26.6 0V470.9a13.3 13.3 0 0 0 13.3 13.3h133.02a13.3 13.3 0 0 0 13.3-13.3V342.01c0-22 17.91-39.91 39.92-39.91s39.91 17.9 39.91 39.9v128.9a13.3 13.3 0 0 0 13.3 13.3h133.04a13.3 13.3 0 0 0 13.3-13.3V245.85a13.3 13.3 0 0 0-13.3-13.3z"></path></symbol><symbol id="iconz-pocketnow" viewBox="0 0 600 870"><path fill="currentColor" d="M224.81 100.89h148.63a7.35 7.35 0 0 0 7.34-7.37v-4.26a7.35 7.35 0 0 0-7.34-7.37H224.81a7.36 7.36 0 0 0-7.34 7.37v4.26a7.36 7.36 0 0 0 7.34 7.37z"></path><path fill="currentColor" d="M569.24 0H30.76A30.82 30.82 0 0 0 0 30.89v808.22A30.82 30.82 0 0 0 30.76 870h538.48A30.82 30.82 0 0 0 600 839.11V30.89A30.82 30.82 0 0 0 569.24 0zM340 827.26a7.62 7.62 0 0 1-7.6 7.63h-66.51a7.61 7.61 0 0 1-7.59-7.63v-41.75a7.61 7.61 0 0 1 7.59-7.62h66.47a7.61 7.61 0 0 1 7.6 7.62zm202.1-81.37H56.16v-693H542.1z"></path><path fill="currentColor" d="M234.4 547.89h144.23a74 74 0 0 0 73.85-74.17V293.05a74 74 0 0 0-73.85-74.16H149.76v439h84.64zm0-256h133.44v183H234.4z"></path></symbol><symbol id="iconz-rss" viewBox="0 0 559.37 559.37"><path d="M53.24 0c46.52 0 91.3 6.02 134.34 18.06s83.33 29.07 120.87 51.1a508.28 508.28 0 0 1 102.51 79.25 508.28 508.28 0 0 1 79.26 102.51 508.08 508.08 0 0 1 51.1 120.87c12.03 43.05 18.05 87.82 18.05 134.34 0 14.69-5.2 27.23-15.6 37.64-10.4 10.4-22.95 15.6-37.64 15.6-14.69 0-27.23-5.2-37.64-15.6-10.4-10.4-15.6-22.95-15.6-37.64 0-36.72-4.8-72.12-14.39-106.19a404.74 404.74 0 0 0-40.4-95.47 399.41 399.41 0 0 0-62.42-80.78 399.54 399.54 0 0 0-80.78-62.43c-29.58-17.34-61.4-30.8-95.47-40.39S89.97 106.5 53.25 106.5c-14.7 0-27.24-5.2-37.64-15.6S0 67.92 0 53.23 5.2 26 15.6 15.6C26 5.2 38.56 0 53.24 0zm0 201.35c42.03 0 81.5 8.06 118.43 24.17s69.15 37.95 96.7 65.49c27.53 27.54 49.36 59.77 65.48 96.7 16.11 36.92 24.17 76.39 24.17 118.42 0 14.68-5.2 27.23-15.6 37.63-10.4 10.4-22.95 15.6-37.65 15.6-14.68 0-27.23-5.2-37.63-15.6-10.4-10.4-15.6-22.95-15.6-37.63 0-27.34-5.21-53.04-15.61-77.12-10.4-24.07-24.59-45.08-42.54-63.03-17.95-17.95-38.96-32.13-63.03-42.54-24.08-10.4-49.78-15.6-77.12-15.6-14.68 0-27.23-5.2-37.63-15.6C5.2 281.82 0 269.27 0 254.6s5.2-27.24 15.6-37.64c10.41-10.4 22.96-15.61 37.64-15.61zm97.92 279.68c0 10.61-1.93 20.4-5.81 29.38a75.04 75.04 0 0 1-15.91 23.56 74.2 74.2 0 0 1-23.87 15.92 73.99 73.99 0 0 1-29.07 5.8c-10.6 0-20.4-1.93-29.38-5.8a75.1 75.1 0 0 1-23.56-15.92 75.05 75.05 0 0 1-15.91-23.56c-3.88-8.98-5.81-18.77-5.81-29.38 0-10.2 1.93-19.89 5.81-29.06a74.08 74.08 0 0 1 15.91-23.87 75.07 75.07 0 0 1 23.56-15.91c8.98-3.88 18.77-5.82 29.38-5.82a73.9 73.9 0 0 1 29.07 5.82 74.16 74.16 0 0 1 23.87 15.9 74.11 74.11 0 0 1 15.91 23.88 73.95 73.95 0 0 1 5.81 29.06z" fill="currentColor"></path></symbol><symbol id="iconz-search" viewBox="0 0 20 20"><path d="M15.8 7.9c0 4.4-3.5 7.9-7.9 7.9S0 12.3 0 7.9 3.5 0 7.9 0s7.9 3.5 7.9 7.9zM2 7.9c0 3.3 2.6 5.9 5.9 5.9s5.9-2.6 5.9-5.9c0-3.3-2.6-5.9-5.9-5.9S2 4.6 2 7.9z"></path><path d="M12.26 13.74l1.41-1.41 6.3 6.29-1.42 1.41z"></path></symbol><symbol id="iconz-swappa" viewBox="0 0 100 100"><circle cx="60.5" cy="51.6" r="54.5" fill="none"></circle><path d="M45.9 12.2c.4 3.3-.9 4.9-4.2 5.5-5.8.9-15.8 3.9-22.6 12.7C9.5 42.9 10.5 54.9 12 61c.7 2.4-.6 5-2.9 5.9-2.4 1.2-5.4.2-6.6-2.2a3 3 0 0 1-.4-1A50.2 50.2 0 0 1 35.4 1.2c1.2-.4 2.4-.7 3.6-1 3.6-.8 5.6.7 6 4.3l.9 7.7zM91 66.9c3.4 1.5 5.7.5 6.8-3 8.2-26.4-6.6-54.5-33-62.7-1.2-.4-2.4-.7-3.6-1-2.6-.7-5.3.8-6 3.4-.2.4-.2.7-.2 1.1-.4 2.5 1.2 4.9 3.7 5.5 6 1.7 16.9 6.8 22.9 21.5 4.3 10.3 1.8 20.4-.3 25.9-1.2 3.1-.4 5 2.7 6.3l7 3zm-77 8.6c-3 2.2-3.3 4.6-.8 7.3A50.11 50.11 0 0 0 84 85.7c.9-.9 1.8-1.7 2.7-2.7 1.9-1.9 2-5 .1-6.9-.2-.2-.5-.5-.8-.7-2-1.6-4.8-1.4-6.5.4C75 80.1 65.1 87 49.4 85 38.2 83.5 30.7 76.4 27 71.8c-2.1-2.6-4.1-2.8-6.8-.9L14 75.5zM35 39c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10c.1-5.5-4.4-10-10-10zm30 0c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10c.1-5.5-4.4-10-10-10z" fill="currentColor"></path></symbol><symbol id="iconz-telegram" viewBox="0 0 448 512"><path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></symbol><symbol id="iconz-twitter" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.72c.33 4.54.33 9.1.33 13.64 0 138.72-105.59 298.56-298.56 298.56-59.45 0-114.68-17.22-161.14-47.1 8.45.97 16.57 1.3 25.34 1.3 49.05 0 94.21-16.58 130.27-44.84a105.12 105.12 0 0 1-98.1-72.77 132.7 132.7 0 0 0 19.81 1.62c9.42 0 18.84-1.3 27.61-3.57A104.95 104.95 0 0 1 20.8 195.57v-1.3a105.68 105.68 0 0 0 47.43 13.32 104.86 104.86 0 0 1-46.78-87.39c0-19.49 5.2-37.36 14.3-52.95a298.27 298.27 0 0 0 216.36 109.8c-1.62-7.8-2.6-15.91-2.6-24.03 0-57.83 46.78-104.94 104.94-104.94 30.2 0 57.5 12.67 76.67 33.14a206.6 206.6 0 0 0 66.6-25.34 104.65 104.65 0 0 1-46.14 57.83c21.12-2.28 41.59-8.13 60.43-16.25a225.57 225.57 0 0 1-52.63 54.26z"></path></symbol><symbol id="iconz-user" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96a88 88 0 1 1 0 176 88 88 0 0 1 0-176zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></symbol><symbol id="iconz-youtube" viewBox="0 0 576 512"><path fill="currentColor" d="M549.65 124.08a68.62 68.62 0 0 0-48.28-48.6C458.78 64 288 64 288 64S117.22 64 74.63 75.49a68.62 68.62 0 0 0-48.28 48.6c-11.42 42.86-11.42 132.3-11.42 132.3s0 89.44 11.42 132.3c6.28 23.65 24.78 41.5 48.28 47.82C117.22 448 288 448 288 448s170.78 0 213.37-11.49c23.5-6.32 42-24.17 48.28-47.82 11.42-42.86 11.42-132.3 11.42-132.3s0-89.44-11.42-132.3zM232.15 337.6V175.2l142.73 81.2-142.73 81.2z"></path></symbol></svg>
+</div>
+
+<script type="text/javascript">
+    // misc_guestpopover_desktop
+    if(!is_mobile)
+    {
+        if(xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_P_1_1" class="purchad"></div>');
+            document.write('<div id="purch_Y_O_1_1" class="purchad"></div>');
+        }
+    }
+</script><div id="purch_Y_P_1_1" class="purchad"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_P_1_1', false);}); } catch(e) {};</script></div><div id="purch_Y_O_1_1" class="purchad"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_O_1_1', false);}); } catch(e) {};</script></div>
+
+<script type="text/javascript">
+    // misc_guestpopover_desktop
+    if(is_mobile)
+    {
+        if(xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_P_1_1" class="purchad"></div>');
+            document.write('<div id="purch_Y_O_1_1" class="purchad"></div>');
+        }
+    }
+</script>
+
+
+
+
+<div class="vbmenu_popup" id="navbar_search_menu" style="display:none;margin-top:3px" align="left">
+<table cellpadding="4" cellspacing="1" border="0">
+<tbody><tr>
+<td class="thead">Search Forums</td>
+</tr>
+<tr>
+<td class="vbmenu_option" title="nohilite">
+<form action="https://forum.xda-developers.com/search.php?do=process" method="post">
+<input type="hidden" name="do" value="process">
+<input type="hidden" name="quicksearch" value="1">
+<input type="hidden" name="childforums" value="1">
+<input type="hidden" name="exactname" value="1">
+<input type="hidden" name="s" value="">
+<input type="hidden" name="securitytoken" value="guest">
+<div><input type="text" class="bginput" name="query" size="25" tabindex="1001"><input type="submit" class="button" value="Go" tabindex="1004"></div>
+<div style="margin-top:5px">
+<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked">Show Threads</label>
+&nbsp;
+<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003">Show Posts</label>
+</div>
+</form>
+</td>
+</tr>
+<tr>
+<td class="vbmenu_option"><a href="https://forum.xda-developers.com/tags.php" rel="nofollow">Tag Search</a></td>
+</tr>
+<tr>
+<td class="vbmenu_option"><a href="https://forum.xda-developers.com/search.php" accesskey="4" rel="nofollow">Advanced Search</a></td>
+</tr>
+<tr>
+<td class="vbmenu_option"><a href="https://forum.xda-developers.com/post_thanks.php?do=findallthanks">Find All Thanked Posts</a></td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+<table cellpadding="4" cellspacing="1" border="0">
+<tbody><tr>
+<td class="thead" nowrap="nowrap">Go to Page...</td>
+</tr>
+<tr>
+<td class="vbmenu_option" title="nohilite">
+<form action="https://forum.xda-developers.com/index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4">
+<input type="button" class="button" id="pagenav_ibtn" value="Go">
+</form>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="no-navbar">
+<div class="leaderboard">
+
+<div id="purch_Y_L_1_1" class="purchad purchad-desktop" style="margin: auto; min-height: 90px; overflow: hidden; max-width: 100%; position: relative; z-index: 30;"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_L_1_1', false);}); } catch(e) {};</script></div><script id="5530b28b" data-cfasync="false">
+    if(((typeof xda_ad_free === 'undefined') || (xda_ad_free !== true)) && !is_mobile)
+    {
+        let purchad = document.createElement("div");
+        purchad.id = "purch_Y_L_1_1";
+        purchad.classList.add('purchad');
+        purchad.classList.add('purchad-desktop');
+        purchad.style.margin = "auto";
+        purchad.style.minHeight = "90px";
+        purchad.style.overflow = "hidden";
+        purchad.style.maxWidth = "100%";
+
+        let insertLocation = document.getElementById('5530b28b');
+        insertLocation.parentNode.insertBefore(purchad, insertLocation);
+    }
+</script>
+
+<script id="6a7e6973646c" data-cfasync="false">
+    if(((typeof xda_ad_free === 'undefined') || (xda_ad_free !== true)) && is_mobile)
+    {
+        let purchad = document.createElement("div");
+        purchad.id = "purch_Y_R_1_1";
+        purchad.classList.add('purchad');
+        purchad.classList.add('purchad-mobile');
+        let insertLocation = document.getElementById('6a7e6973646c');
+        insertLocation.parentNode.insertBefore(purchad, insertLocation);
+    }
+</script>
+
+</div>
+</div>
+
+
+<div class="page page-index">
+
+<form id="search" class="search" method="GET" style="margin-top: 50px;">
+<input type="text" name="query" id="algoliaquery" autocomplete="off" spellcheck="false" placeholder="What are you looking for?">
+<i class="fas fa-search"></i>
+<i class="fas fa-times" title="Clear search" style="display: none;"></i>
+<i class="fas fa-microphone" style="display: inline;" onclick="startVoice(event)" id="voicestart"></i>
+<div class="powered-by-algolia"><a href="https://www.algolia.com/?utm_source=website&amp;utm_medium=referrals&amp;utm_campaign=free-trial-forum-xda-developers&amp;utm_content=forum-xda-developers" rel="nofollow" target="_blank"><img src="./XDA Forums_files/search-by-algolia-dark-background-9ad382d7.webp" alt="Algolia" title="Algolia"></a></div>
+</form>
+<script>
+var ignore_onend;
+var recognizing = false;
+var final_transcript = '';
+var start_timestamp;
+var lastquery;
+var start_button = document.getElementById("voicestart");
+if (!('webkitSpeechRecognition' in window)) {
+  // do nothing
+} else {
+  start_button.style.display = 'inline';
+  var recognition = new webkitSpeechRecognition();
+  recognition.continuous = false;
+  recognition.interimResults = true;
+  recognition.onstart = function() {
+    recognizing = true;
+console.log("Starting voice recognition");
+    start_button.style.color = 'red';
+    //showInfo('info_speak_now');
+    //start_img.src = 'mic-animate.gif';
+  };
+  recognition.onerror = function(event) {
+console.log(event);
+    if (event.error == 'no-speech') {
+      //start_img.src = 'mic.gif';
+      //ignore_onend = true;
+    }
+    if (event.error == 'audio-capture') {
+      //start_img.src = 'mic.gif';
+      ignore_onend = true;
+    }
+    if (event.error == 'not-allowed') {
+      if (event.timeStamp - start_timestamp < 100) {
+        //showInfo('info_blocked');
+      } else {
+        //showInfo('info_denied');
+      }
+      ignore_onend = true;
+    }
+  };
+  recognition.onend = function() {
+console.log("Voice recognition ended");
+    recognizing = false;
+    if (ignore_onend) {
+      return;
+    }
+    //start_img.src = 'mic.gif';
+    if (!final_transcript) {
+      //showInfo('info_start');
+      return;
+    }
+  };
+  recognition.onresult = function(event) {
+console.log("Voice result:");
+    searchType = 'voice';
+    var interim_transcript = '';
+    var query;
+    for (var i = event.resultIndex; i < event.results.length; ++i) {
+      if (event.results[i].isFinal) {
+        final_transcript += event.results[i][0].transcript;
+        query = final_transcript;
+      } else {
+        interim_transcript += event.results[i][0].transcript;
+        query = interim_transcript;
+      }
+    }
+
+    if (final_transcript) {
+          console.log("Final Voice query: "+final_transcript);
+      $('form#search').find('#algoliaquery').val(final_transcript);
+start_button.style.color = '#999';
+    } else if (interim_transcript) {
+      console.log("Interim query: "+interim_transcript);
+      $('form#search').find('#algoliaquery').val(interim_transcript);
+      // do algolia search
+    }
+
+    
+var searchtimeout;
+            clearTimeout(searchtimeout);
+            if (query !== lastquery) {
+            searchtimeout = setTimeout(function() {
+
+                if (query.length > 0) {
+                    // takes displayed query and uses any additional hidden query modifiers
+                    /* hiddenQuery = .find('#hiddenquery').val();
+                    if (typeof(hiddenQuery) != 'undefined' && hiddenQuery != '') {
+                        realQuery = query.concat(" "+hiddenQuery);
+                    } else {
+                        realQuery = query;
+                    }*/
+                    currentAlgoliaPage = 0;
+                    searchAlgolia(query);
+
+                    $('#search .fa-times').show();
+                } else {
+                    clearSearch();
+                    urlSearchQueryAdder('');
+                }
+
+                toggleSuggestions();
+            }, 150);
+
+             }
+  };
+}
+function startVoice(event) {
+  if (recognizing) {
+    recognition.stop();
+    return;
+  }
+  final_transcript = '';
+  recognition.lang = 'en-US';
+  recognition.start();
+  ignore_onend = false;
+
+  //start_img.src = '/intl/en/chrome/assets/common/images/content/mic-slash.gif';
+  start_timestamp = event.timeStamp;
+}
+
+</script>
+<div class="algoliahomepageresults">
+<div id="algoliahomepage-left">
+<ul class="algoliahomepagetabs">
+<li id="forumhome_tab_all"><a href="https://forum.xda-developers.com/all">All Forums</a></li>
+<li id="forumhome_tab_smartwatches"><a href="https://forum.xda-developers.com/smartwatches">Smartwatches</a></li>
+<li id="forumhome_tab_tablets"><a href="https://forum.xda-developers.com/tablets">Tablets</a></li>
+</ul>
+<section id="alogliahomepagepopular" class="algoliahomepageleftcontent"><h2>Popular on XDA</h2><ul><li><a href="https://forum.xda-developers.com/android/themes">Android Themes &gt;</a></li><li><a href="https://forum.xda-developers.com/u/tasker-tips-tricks">Tasker Tricks &gt;</a></li><li><a href="https://forum.xda-developers.com/general/about-xda">About XDA &gt;</a></li><li><a href="https://forum.xda-developers.com/apps">Community Apps &gt;</a></li><li><a href="https://play.google.com/store/apps/details?id=com.xda.feed">The Best Stuff on XDA &gt;</a></li><li><a href="https://forum.xda-developers.com/general/off-topic">Off-Topic &gt;</a></li><li><a href="https://forum.xda-developers.com/showthread.php?t=3034811">Xposed Framework &gt;</a></li><li><a href="https://forum.xda-developers.com/xposed/modules">Xposed Modules &gt;</a></li></ul></section>
+<section class="algoliahomepagedeviceimages">
+<ul id="algoliahometopdevices" class="algoliahomedeviceimages"><li><a class="device-result" href="https://forum.xda-developers.com/honor-view-20"><img src="./XDA Forums_files/alg-v20-version-2_thumbalgoliahome.jpg" alt="Honor View 20" title="Honor View 20"><p class="device_name">Honor View20</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/honor-8x"><img src="./XDA Forums_files/Honor_8x_thumbalgoliahome.webp" alt="Honor 8x" title="Honor 8x"><p class="device_name">Honor 8x</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/honor-10"><img src="./XDA Forums_files/Honor-10_thumbangoliahome_thumbalgoliahome.webp" alt="Honor 10" title="Honor 10"><p class="device_name">Honor 10</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/lg-g8"><img src="./XDA Forums_files/lg_g8_thumbalgoliahome.webp" alt="LG G8" title="LG G8"><p class="device_name">LG G8</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/galaxy-s10"><img src="./XDA Forums_files/galaxy_s10_thumbalgoliahome.webp" alt="Samsung Galaxy S10" title="Samsung Galaxy S10"><p class="device_name">Samsung Galaxy S10</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/oneplus-6t"><img src="./XDA Forums_files/oneplus_6t_thumbalgoliahome.webp" alt="OnePlus 6T " title="OnePlus 6T "><p class="device_name">OnePlus 6T </p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/pixel-3"><img src="./XDA Forums_files/pixel_3_thumbalgoliahome.webp" alt="Google Pixel 3" title="Google Pixel 3"><p class="device_name">Google Pixel 3</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/mate-20-pro"><img src="./XDA Forums_files/mate20pro_thumbalgoliahome.webp" alt="Huawei Mate 20 Pro" title="Huawei Mate 20 Pro"><p class="device_name">Huawei Mate 20 Pro</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/galaxy-note-9"><img src="./XDA Forums_files/galaxy-note-9_thumbangoliahome_thumbalgoliahome.webp" alt="Samsung Galaxy Note 9" title="Samsung Galaxy Note 9"><p class="device_name">Samsung Galaxy Note 9</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/oneplus-6"><img src="./XDA Forums_files/oneplus-6_thumbalgoliahome_thumbalgoliahome.jpg" alt="OnePlus 6" title="OnePlus 6"><p class="device_name">OnePlus 6</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/galaxy-s9-plus"><img src="./XDA Forums_files/s9-plus_thumbalgoliahome.jpg" alt="Samsung Galaxy S9+" title="Samsung Galaxy S9+"><p class="device_name">Samsung Galaxy S9+</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/galaxy-s9"><img src="./XDA Forums_files/s9alg_thumbalgoliahome.jpg" alt="Samsung Galaxy S9 " title="Samsung Galaxy S9 "><p class="device_name">Samsung Galaxy S9 </p></a></li></ul>
+</section>
+<section class="algoliahomepageleftcontent"><h2>Android Development and Hacking</h2><div class="algoliahomepagecountslabel">Threads / Posts</div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/general">&gt; Android General</a><div class="homepageforumdesc">Android root tutorials, one-click root tools, ROMs and other Android modifications can be found in this forum for devices from Huawei, Elephone, Lenovo, ZTE, and others.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">12,802<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">333,268<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/help">&gt; Android Q&amp;A, Help &amp; Troubleshooting</a><div class="homepageforumdesc">This forum is for all of your questions about Android Development and Hacking. If you need help troubleshooting a problem, please be as specific as possible by describing your software configuration, including the ROM, kernel, and any modifications you've done.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">116,139<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">511,879<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/software-hacking">&gt; Android Software and Hacking General [Developers Only]</a><div class="homepageforumdesc">Technical discussion of Android development and hacking. No noobs please. Device-specific releases should go under appropriate device forum.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">18,156<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">351,129<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/software">&gt; Android Software Development</a><div class="homepageforumdesc">Discussion about Android-specific software development</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">7,268<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">323,007<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/development">&gt; Miscellaneous Android Development</a><div class="homepageforumdesc">For ROMs, kernels, tools and scripts only (devices that do not have a forum on XDA)</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">6,343<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">274,567<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/themes">&gt; Android Themes</a><div class="homepageforumdesc">Themes and skins for Android devices</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">10,667<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">739,156<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/android/apps-games">&gt; Android Apps and Games</a><div class="homepageforumdesc">Applications and games created by xda-developers users for use on Android. No commercial apps/games allowed.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">40,129<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">1,240,374<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div></section>
+
+<script type="text/javascript">
+    if(!is_mobile)
+    {
+        if (xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_L_0_1" class="purchad" style="margin-bottom:10px; text-align:left; "></div>');
+        }
+        else if (xda_ad_choice == "sortable")
+        {
+            document.write('\x3Cscript src="//tags-cdn.deployads.com/a/xda-developers.com.js" async >\x3C/script>');
+            document.write('<div class="ad-tag" data-ad-name="index_incontent1_desktop" data-ad-size="728x90"></div>');
+
+            (deployads = window.deployads || []).push({});
+        }
+    }
+</script><div id="purch_Y_L_0_1" class="purchad" style="margin-bottom:10px; text-align:left; "><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_L_0_1', false);}); } catch(e) {};</script></div>
+
+<section class="algoliahomepageleftcontent"><h2>General Discussion</h2><div class="algoliahomepagecountslabel">Threads / Posts</div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/about-xda">&gt; About xda-developers.com</a><div class="algoliahomepageforumdesc">Anything to do more with the site than with the phones. Feature requests, announcements, praise, moaning, etc. :)</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">4,365<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">115,628<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/general">&gt; General</a><div class="algoliahomepageforumdesc">Discuss anything relating to phones that don't fit into the other forums: see Android tutorials, get advice on the best accessories, post a rant, or ask for help.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">32,964<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">246,331<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/help">&gt; Questions and Answers</a><div class="algoliahomepageforumdesc">This forum is for all questions, big or small, you might have. Please read the rules in this forum before submitting any <span>Q&amp;A</span>.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">118,442<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">498,487<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/connected-car">&gt; Connected Car</a><div class="algoliahomepageforumdesc">For discussion of connected car infotainment systems</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">342<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">6,046<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/rooting-roms">&gt; Upgrading, Modifying and Unlocking</a><div class="algoliahomepageforumdesc">Advanced issues related to <span>mobile development</span> involving multiple devices.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">18,761<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">204,713<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/accessories">&gt; Accessories</a><div class="algoliahomepageforumdesc">For accessories that involves multiple phone-types. Car-kits, headphones, cables, chargers, extra batteries, replacement screens, sources for connectors, etc.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">4,400<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">38,602<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div><div class="algoliahomepageforumentry"><a href="https://forum.xda-developers.com/general/off-topic">&gt; Off-topic</a><div class="algoliahomepageforumdesc">Anything not related to the phones.</div><div class="algoliahomepageforumcounts"><span class="algoliahomepageforumthreads">14,073<span class="algoliahomepagecountslabelmobile"> Threads</span></span><span class="algoliahomepageforumcountsseparator"> / </span><span class="algoliahomepageforumposts">836,482<span class="algoliahomepagecountslabelmobile"> Posts</span></span></div></div></section>
+<section class="algoliahomepagedeviceimages">
+<ul id="algoliahomenewdevices" class="algoliahomedeviceimages"><li><a class="device-result" href="https://forum.xda-developers.com/honor-8x"><img src="./XDA Forums_files/Honor_8x_thumbalgoliahome.webp" alt="Honor 8x" title="Honor 8x"><p class="device_name">Honor 8x</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/redmi-7"><img src="./XDA Forums_files/Xiaomi_Redmi_7_thumbalgoliahome.webp" alt="Xiaomi Redmi 7" title="Xiaomi Redmi 7"><p class="device_name">Xiaomi Redmi 7</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/black-shark-2"><img src="./XDA Forums_files/Xiaomi_Black_Shark_2_thumbalgoliahome.webp" alt="Xiaomi Black Shark 2" title="Xiaomi Black Shark 2"><p class="device_name">Xiaomi Black Shark 2</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/y7-2019"><img src="./XDA Forums_files/Huawei_Y7_2019_thumbalgoliahome.webp" alt="Huawei Y7 2019" title="Huawei Y7 2019"><p class="device_name">Huawei Y7 2019</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/p-smart-plus"><img src="./XDA Forums_files/Huawei_P_Smart_Plus_2019_thumbalgoliahome.webp" alt="Huawei P Smart+ 2019" title="Huawei P Smart+ 2019"><p class="device_name">Huawei P Smart+ 2019</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/redmi-note-7-pro"><img src="./XDA Forums_files/xiaomi_redmi_note_7_pro_thumbalgoliahome.webp" alt="Xiaomi Redmi Note 7 Pro" title="Xiaomi Redmi Note 7 Pro"><p class="device_name">Xiaomi Redmi Note 7 Pro</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/realme-3"><img src="./XDA Forums_files/Oppo_Realme_3_thumbalgoliahome.webp" alt="Oppo Realme 3" title="Oppo Realme 3"><p class="device_name">Oppo Realme 3</p></a></li><li><a class="device-result" href="https://forum.xda-developers.com/galaxy-m30"><img src="./XDA Forums_files/Samsung_Galaxy_M30_thumbalgoliahome.webp" alt="Samsung Galaxy M30" title="Samsung Galaxy M30"><p class="device_name">Samsung Galaxy M30</p></a></li></ul>
+</section>
+<section class="algoliahomepageleftcontent algoliahomepagenewthreads">
+<h2>New and Hot</h2>
+<ul id="algoliahomepagenewthreads"><li><a href="https://forum.xda-developers.com/galaxy-note-9/development/kernel-tgpkernel-t3910842">[KERNEL][N96xx][PIE][2019-03-17] ** TGPKERNEL **[v1.0.1][4.9.163][CSB3]</a><span class="alogliaresultdate">In Samsung Galaxy Note 9 (Exynos) ROMs, Kernels, Recoveries, &amp; Other Development on Mar 13, 2019 at 07:03pm</span></li><li><a href="https://forum.xda-developers.com/galaxy-note-9/development/rom-galaxy-project-t3911947">[ROM][S9/S9+/N9][PIE][2019-03-17] ** THE GALAXY PROJECT ** [XXS2CSC3-v1.0.0]</a><span class="alogliaresultdate">In Samsung Galaxy Note 9 (Exynos) ROMs, Kernels, Recoveries, &amp; Other Development on Mar 16, 2019 at 08:03pm</span></li><li><a href="https://forum.xda-developers.com/poco-f1/development/rom-cerberusos-1-5-t3911509">[ROM][PIE] CerberusOS 1.6 [Beryllium][15-03-2019]</a><span class="alogliaresultdate">In Xiaomi Poco F1 ROMs, Kernels, Recoveries, &amp; Other Development on Mar 15, 2019 at 02:03pm</span></li><li><a href="https://forum.xda-developers.com/mi-a2-lite/development/paranoid-android-pie-beta-xiaomi-mi-a2-t3912880">Paranoid Android Pie Beta - Xiaomi Mi A2 Lite</a><span class="alogliaresultdate">In Xiaomi Mi A2 Lite ROMs, Kernels, Recoveries, &amp; Other Development on Mar 19, 2019 at 09:03am</span></li><li><a href="https://forum.xda-developers.com/redmi-note-5/development/treble-xperience-13-0-t3913056">[TREBLE][Vince][OFICIAL][PIE][9.0.0_r12]XPerience 13.0</a><span class="alogliaresultdate">In Xiaomi Redmi Note 5 / 5 Plus ROMs, Kernels, Recoveries, &amp; Other Development on Mar 19, 2019 at 07:03pm</span></li></ul>
+</section>
+<section class="algoliahomepageleftcontent algoliahomepagecommunity">
+<h2>Community</h2>
+<div>
+<b>General Discussion:</b>
+<a href="https://forum.xda-developers.com/general/about-xda" title="About XDA Developers the site">About</a>
+<a href="https://forum.xda-developers.com/general/general" title="General mobile device discussion">General</a>
+<a href="https://forum.xda-developers.com/general/paid-software" title="Paid commercial software discussion">Paid Apps</a>
+<a href="https://forum.xda-developers.com/general/help" title="Generic Question and Answers">Q&amp;A</a>
+<a href="https://forum.xda-developers.com/general/off-topic" title="Off Topic">Off Topic</a>
+</div>
+<div>
+<b>Learn and Discover:</b>
+<a href="https://forum.xda-developers.com/app-development" title="App Developer Forums">App Dev Forums</a>
+<a href="https://forum.xda-developers.com/android/apps-games" title="Apps &amp; Games">Apps &amp; Games</a>
+<a href="https://forum.xda-developers.com/android/themes" title="Android Themes">Themes</a>
+<a href="https://forum.xda-developers.com/custom-roms" title="Custom ROM Central">Custom ROMs</a>
+<a href="https://forum.xda-developers.com/general/xda-university" title="XDA-University">XDA-University</a>
+</div>
+<div>
+<b>App Support:</b>
+<a href="https://forum.xda-developers.com/xposed" title="Xposed Framework">Xposed</a>
+<a href="https://forum.xda-developers.com/apps/framaroot" title="Framaroot">Framaroot</a>
+<a href="https://forum.xda-developers.com/apps/mx-player" title="MX Player">MX Player</a>
+<a href="https://forum.xda-developers.com/apps/airdroid" title="AirDroid">AirDroid</a>
+<a href="https://forum.xda-developers.com/apps/greenify" title="Greenify">Greenify</a>
+<a href="https://forum.xda-developers.com/apps/supersu" title="SuperSU">SuperSU</a>
+<a href="https://forum.xda-developers.com/apps/xdalabs" title="XDA Labs">XDA Labs</a>
+</div>
+<div>
+<b>Buy and Sell Android Devices:</b>
+<a rel="nofollow" href="https://swappa.com/sell" target="_blank" title="Sell Mobile Devices on Swappa">Sell on Swappa</a>
+<a rel="nofollow" href="https://swappa.com/buy" target="_blank" title="Buy Used Mobile Devices on Swappa">Buy from Swappa</a>
+<a rel="nofollow" href="https://swappa.com/esn" target="_blank" title="Check IMEI">ESN Check</a>
+<a rel="nofollow" href="https://swappa.com/about" target="_blank" title="Why Swappa?">Why Swappa?</a>
+</div>
+</section>
+<script type="text/javascript">
+    if(!is_mobile)
+    {
+        if(xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_R_0_1" class="purchad afterforums" style="margin-bottom:10px;"></div>');
+        }
+        else if(xda_ad_choice == "sortable")
+        {
+            document.write('\x3Cscript src="//tags-cdn.deployads.com/a/xda-developers.com.js" async >\x3C/script>');
+            document.write('<div class="ad-tag" data-ad-name="forum_incontentbox_1" data-ad-size="300x250"></div>');
+
+            (deployads = window.deployads || []).push({});
+        }
+    }
+</script><div id="purch_Y_R_0_1" class="purchad afterforums" style="margin-bottom:10px;"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_R_0_1', false);}); } catch(e) {};</script></div>
+
+</div>
+<div id="algoliahomepage-right">
+<ul class="algoliahomepagetabs">
+<li id="forumhome_tab_all"><a href="https://forum.xda-developers.com/all">All Forums</a></li>
+<li id="forumhome_tab_smartwatches"><a href="https://forum.xda-developers.com/smartwatches">Smartwatches</a></li>
+<li id="forumhome_tab_tablets"><a href="https://forum.xda-developers.com/tablets">Tablets</a></li>
+</ul>
+
+<div id="purch_Y_R_1_1" class="purchad purchad-desktop" style="margin-bottom: 10px; min-height: 90px;"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_R_1_1', false);}); } catch(e) {};</script></div><script id="28a3ddacc2e8" data-cfasync="false">
+    if((typeof xda_ad_free === 'undefined') || (xda_ad_free !== true) && !is_mobile)
+    {
+        let purchad = document.createElement("div");
+        purchad.id = "purch_Y_R_1_1";
+        purchad.classList.add('purchad');
+        purchad.classList.add('purchad-desktop');
+        purchad.style.marginBottom = "10px";
+        purchad.style.minHeight = "90px";
+
+        let insertLocation = document.getElementById('28a3ddacc2e8');
+        insertLocation.parentNode.insertBefore(purchad, insertLocation);
+    }
+</script>
+<section class="algoliahomepagerightcontent algoliahomepagebeststuff">
+<h2>Best Stuff on XDA</h2>
+<div class="algoliahomepagerightcontentcontent">
+<ol id="algoliahomepagebeststuffcontent"><li><a href="https://forum.xda-developers.com/showthread.php?t=476483">Show off your homescreen!</a></li><li><a href="https://www.xda-developers.com/how-to-install-magisk/">The best root mods with Magisk</a></li><li><a href="https://play.google.com/store/apps/details?id=projekt.launcher">Hyperion Launcher is light and clean</a></li><li><a href="https://forum.xda-developers.com/search">Search XDA like a boss with Search Plus</a></li><li><a href="https://forum.xda-developers.com/android/apps-games">Apps and games made by XDA users</a></li></ol>
+</div>
+</section>
+<div class="algoliahomepagerightcontent algoliahomepageinthenews">
+<h2>In the News</h2><div class="algoliahomepageinthenewsitem">
+<a href="https://www.xda-developers.com/firefox-66-block-autoplaying-videos-scroll-anchoring/" target="_blank"><img src="./XDA Forums_files/Mozilla-Firefox-Logo.png" style="height:165px;width:330px;"></a>
+<div class="algoliahomepagerightcontentcontent">
+<a href="https://www.xda-developers.com/firefox-66-block-autoplaying-videos-scroll-anchoring/" target="_blank">
+Firefox 66 blocks autoplaying videos by default and introduces scroll anchoring for smoother scrolling
+</a>
+<span class="meta_date">posted on 3/20/19 at 11:57AM</span>
+</div>
+</div>
+<div class="algoliahomepageinthenewsitem">
+<a href="https://www.xda-developers.com/google-fined-1-5-billion-eu-adsense/" target="_blank"><img src="./XDA Forums_files/Google-EU.png" style="height:165px;width:330px;"></a>
+<div class="algoliahomepagerightcontentcontent">
+<a href="https://www.xda-developers.com/google-fined-1-5-billion-eu-adsense/" target="_blank">
+Google fined €1.5 billion by EU for restricting ad competitors
+</a>
+<span class="meta_date">posted on 3/20/19 at 11:25AM</span>
+</div>
+</div>
+<div class="algoliahomepageinthenewsitem">
+<a href="https://www.xda-developers.com/moto-z4-renders-48mp-camera-snapdragon-855/" target="_blank"><img src="./XDA Forums_files/moto-z4-render.png" style="height:165px;width:330px;"></a>
+<div class="algoliahomepagerightcontentcontent">
+<a href="https://www.xda-developers.com/moto-z4-renders-48mp-camera-snapdragon-855/" target="_blank">
+Motorola Moto Z4 leak reveals small notch, Moto Mod support, and possibly in-display fingerprint scanner
+</a>
+<span class="meta_date">posted on 3/20/19 at 10:45AM</span>
+</div>
+</div>
+<div class="algoliahomepageinthenewsitem">
+<a href="https://www.xda-developers.com/franco-kernel-manager-4-0/" target="_blank"><img src="./XDA Forums_files/franco-kernel-updater-featured.png" style="height:165px;width:330px;"></a>
+<div class="algoliahomepagerightcontentcontent">
+<a href="https://www.xda-developers.com/franco-kernel-manager-4-0/" target="_blank">
+Franco Kernel Manager receives a big overhaul in version 4.0
+</a>
+<span class="meta_date">posted on 3/20/19 at 10:15AM</span>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    if(!is_mobile)
+    {
+        if(xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_S_0_1" class="purchad" style="margin-top:10px; width:305px; overflow:hidden;"></div>');
+        }
+        else if(xda_ad_choice == "sortable")
+        {
+            document.write('\x3Cscript src="//tags-cdn.deployads.com/a/xda-developers.com.js" async >\x3C/script>');
+            document.write('<div class="ad-tag" data-ad-name="forum_bot_sidebar" data-ad-sticky="sidebar" data-ad-size="300x250" style="margin-top:10px; width:305px; overflow:hidden;"></div>');
+
+            (deployads = window.deployads || []).push({});
+        }
+    }
+</script><div id="purch_Y_S_0_1" class="purchad" style="margin-top:10px; width:305px; overflow:hidden;"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_S_0_1', false);}); } catch(e) {};</script></div>
+
+<div id="purch_Y_R_0_1" class="purchad purchad-desktop" style="margin-top: 10px;"><script type="text/javascript">try { tmntag.cmd.push(function(){ tmntag.adTag('purch_Y_R_0_1', false);}); } catch(e) {};</script></div><script id="852e3ff4c0ab" data-cfasync="false">
+    if(((typeof xda_ad_free === 'undefined') || (xda_ad_free !== true)) && !is_mobile)
+    {
+        let purchad = document.createElement("div");
+        purchad.id = "purch_Y_R_0_1";
+        purchad.classList.add('purchad');
+        purchad.classList.add('purchad-desktop');
+        purchad.style.marginTop = "10px";
+
+        let insertLocation = document.getElementById('852e3ff4c0ab');
+        insertLocation.parentNode.insertBefore(purchad, insertLocation);
+    }
+</script>
+
+</div>
+</div>
+<div class="results">
+<section class="devices">
+<div id="results_devices" class="results_devices results-container"></div>
+</section>
+<section class="sections">
+<div id="results_sections" class="results_sections results-container results-container-scroll"></div>
+</section>
+<section class="threads">
+<div id="results_threads" class="results_threads results-container results-container-scroll"></div>
+</section>
+<section class="posts">
+<div id="results_posts" class="results_posts results-container"></div>
+</section>
+</div>
+</div>
+
+
+<form action="https://forum.xda-developers.com/index.php" method="get" style="clear:left">
+<div align="center">
+<div class="smallfont" align="center">
+
+
+</div>
+</div>
+</form>
+<div id="footer-nav">
+</div><div id="footer">
+<div id="footer-left">
+<img id="footer-logo" src="./XDA Forums_files/xdalogo-dark.webp">
+<p id="footer-summary">XDA Developers was founded by developers, for developers. It is now a valuable resource for people who want to make the most of their mobile devices, from customizing the look and feel to adding new functionality.<br>
+<a href="https://www.xda-developers.com/recognized-developer-program/">Are you a developer?</a> | <a href="https://www.xda-developers.com/xda-tos/">Terms of Service</a>
+</p>
+<div id="hosted-by">
+<a href="https://www.leaseweb.com/?utm_source=xda-developers.com&amp;utm_medium=textlink&amp;utm_campaign=linkback&amp;utm_content=hostedby" target="_blank" rel="nofollow">
+<img src="./XDA Forums_files/leaseweb_white_bg_175x50.webp" border="0" alt="Hosted by Leaseweb" style="border-radius: 5px;" title="Hosted by Leaseweb">
+</a>
+</div>
+<select id="stylechooser" name="styleid" onchange="switch_id(this, &#39;style&#39;)">
+<optgroup label="Quick Style Chooser">
+<option value="15" class="">-- XDA Classic</option>
+<option value="16" class="">-- XDA 2010</option>
+<option value="18" class="">-- XDA 2013</option>
+<option value="19" class="">---- XDA 2013 Beta - 1024</option>
+<option value="21" class="" selected="selected">-- XDA 2015</option>
+<option value="22" class="">---- 2015 - Dark Theme</option>
+</optgroup>
+</select>
+<small id="footer-special-links">
+</small>
+</div>
+<div id="footer-right">
+<script type="text/javascript">
+    if(is_mobile)
+    {
+        if (xda_ad_choice == "purch")
+        {
+            document.write('<div id="purch_Y_L_0_3" class="purchad footban"></div>');
+        }
+        else if (xda_ad_choice == "sortable")
+        {
+            document.write('\x3Cscript src="//tags-cdn.deployads.com/a/xda-developers.com.js" async >\x3C/script>');
+            document.write('<div class="ad-tag footban" data-ad-name="mforum_bottom" data-ad-size="320x50"></div>');
+
+            (deployads = window.deployads || []).push({});
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    if(!is_mobile)
+    {
+        if (xda_ad_choice == "purch")
+        {
+            // Remove purch unit
+        }
+        else if (xda_ad_choice == "sortable")
+        {
+            document.write('\x3Cscript src="//tags-cdn.deployads.com/a/xda-developers.com.js" async >\x3C/script>');
+            document.write('<div class="ad-tag footban" data-ad-name="forum_footer_728x90" data-ad-size="728x90"></div>');
+
+            (deployads = window.deployads || []).push({});
+        }
+    }
+</script>
+<div class="f-links">
+<span class="f-links-text">More info</span><br>
+<ul class="footer-links">
+<li><a href="https://www.xda-developers.com/contact/">Contact</a></li>
+<li><a href="https://www.xda-developers.com/advertise-with-xda/">Advertise</a></li>
+<li><a href="https://forum.xda-developers.com/announcement.php?a=81" title="XDA Developers Rules" rel="nofollow">Rules</a></li>
+<li><a href="https://www.xda-developers.com/suggest-content/" rel="nofollow">Suggest Content</a></li>
+<li><a href="https://www.xda-developers.com/xda-disclosure-policy/" rel="nofollow">Security</a></li>
+<li><a href="https://www.xda-developers.com/xda-developers-privacy-policy/" rel="nofollow">Privacy Policy</a></li>
+<li><a href="https://www.xda-developers.com/xda-labs/" title="XDA Developers official app">XDA App</a></li>
+<li><a href="https://forum.xda-developers.com/ad-free" rel="nofollow" title="XDA Ad-Free">Remove ads on XDA</a></li>
+<br>
+<li><a href="https://www.xda-developers.com/root/" title="How To Root Any Device">Root Any Device</a></li>
+<li><a href="https://www.xda-developers.com/how-to-do-everything-on-your-phone/" title="How To Do Everything On Your Phone">How To Guides</a></li>
+<li><a href="https://www.xda-developers.com/xdas-top-picks-for-everything/" title="Top Picks For Anything and Everything">XDA's Best</a></li>
+</ul>
+<br>
+<p id="footer-copyright">Copyright © xda-developers. Hosted by <a href="https://www.leaseweb.com/?utm_source=xda-developers.com&amp;utm_medium=textlink&amp;utm_campaign=linkback&amp;utm_content=hostedby" target="_blank">Leaseweb</a>
+</p>
+</div>
+<div class="w-social">
+<div id="w-social-text">We're Social</div>
+<ul class="footer-links">
+<li><a href="https://twitter.com/xdadevelopers" target="_blank" title="XDA Developers on Twitter"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://discord.gg/EhaMzy2" target="_blank" title="XDA Developer on Discord"><i class="fab fa-discord"></i></a></li>
+<li><a href="https://www.facebook.com/xda.developers" target="_blank" title="XDA Developers on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://www.youtube.com/user/xdadevelopers?sub_confirmation=1" target="_blank" title="XDA Developers on YouTube"><i class="fab fa-youtube"></i></a></li>
+</ul>
+</div>
+ <a rel="nofollow" href="https://forum.xda-developers.com/#topanchor" id="jumptop" onclick="window.scrollTo(0,0);return false;"><i class="fas fa-arrow-circle-o-up"></i></a>
+</div>
+</div>
+<div id="footjs" style="display:none; visibility:hidden;">
+<script type="text/javascript" data-cfasync="false">
+		vBulletin_init(); // Main vBulletin Javascript Initialization
+	</script>
+<link rel="stylesheet" href="./XDA Forums_files/jquery-ui.min.css">
+<script data-cfasync="false" type="text/javascript" src="./XDA Forums_files/jquery-ui.min.js"></script>
+<script data-cfasync="false" src="./XDA Forums_files/jsapi" type="text/javascript"></script>
+<script src="./XDA Forums_files/deviceSearch.js" type="text/javascript"></script>
+<script data-cfasync="false" src="./XDA Forums_files/2015.foot.min.js"></script>
+<script data-cfasync="false" src="./XDA Forums_files/xda_topnav.js"></script>
+<style>
+				.purchad {
+					display:block;
+					text-align:center;
+				}
+			</style>
+<script data-cfasync="false" type="text/javascript">
+				var mobilelayout = (jQuery('body').hasClass('mobile-body')) ? true : false;
+
+
+				// create skins div
+				let purchSkin = document.createElement('div');
+				purchSkin.id = "purch_Y_L_1_3";
+				purchSkin.classList.add('purchad');
+
+
+
+				tmntag.cmd.push(function(){
+				
+					
+							
+						if (mobilelayout) {
+							tmntag.placement('2135');
+						} else {
+							tmntag.placement('2128');
+							document.body.prepend(purchSkin);
+							tmntag.cmd.push(function(){tmntag.adTag('purch_Y_L_1_3', false);});
+						}
+					tmntag.target({'ctype':'f_homepage'});
+				
+					
+					
+					
+							
+
+					tmntag.start();
+
+				});
+
+
+
+				if (typeof(showsfw) == 'undefined') {
+					var showsfw = true;
+				}
+				if (showsfw) {
+					jQuery(function($) {
+
+
+
+						$('.purchad').not('.criteo-alt').each(function(index, value) {
+							$(this).html("<script type=\"text/javascript\">try { tmntag.cmd.push(function(){ tmntag.adTag('" + $(this).attr("id") + "', false);}); } catch(e) {};<\/script>");
+						});
+
+
+					
+					});
+				}
+			</script>
+</div><iframe style="display: none;" src="./XDA Forums_files/saved_resource.html"></iframe><div class="adsbox pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads adglare-ad-server text-ad-links" style="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;">&nbsp;</div>
+<div id="qrOverlay" style="display:none;background:rgba(0,0,0,0.7);width:100%;height:100%;position:fixed;top:0;left:0;z-index:9999;">
+<a class="closeQR" href="https://forum.xda-developers.com/#" style="display:block;width:100%;height:100%;z-index:91;position:absolute;top:0;left:0;"></a>
+<div id="qrModal" style="display:none;width:250px;height:250px;z-index:99;position:relative;margin-top:-125px;margin-left:-125px;top:50%;left:50%;opacity:1;">
+<a class="closeQR" href="https://forum.xda-developers.com/#" style="position:absolute;margin-top:0.5em;margin-left:235px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA8xJREFUeNqclktIVFEYx+fO+GjUGqw0S/IRGtTKENtkqJTkooUwC0EQNNpEEiJYoISbKAhcCYogagvBlbRQW/kAIdAkbRGIi3RiNIfJR+qk4zxO/2/4zu3cOw+tA7+5c8/j+5/vfN8592hCCMspSy4o4acXLIHVU40kkQTkglfgm4hd3KAb3PxfESf4KU5XAuBRPA0tznINgCa1Yn193bK0tBR5ZmVlWUpKSiyFhYXmcfPgiaZpn0/yZEKd4vLysqioqKCZRAEhMTc3Z/bqy0nL9Uzt3dXVJex2e0wBic1mEx0dHcLv96tDX8cTyVN7tbW1JTRupr6+3uzR7Vgib2Tr5ORklJHa2lrDe0FBgVhcXDTUDw8PqyIfY4m4ZGt5ebnB4OrqaqS+srJSj8XOzk6kbnBwUO9XVFQkgsGgKmTTRQ4PD/NlrcvlivKis7Mz0kZiJBRLQDI7O/s3rwOBu7oI1B/KhrGxsaiBtDTSsCyxBIj+/n69D+w+Jg0r/YTD4Wy5fF6vNyoD19bWLENDQ4b3pqammBtPHQ+diF0rNo4GxT3Z4HA4ogbSxmtsbNTf4ZnhXS1Ief1/KBQ6og0f2fXIkuJ4MVGDLBOACtVRW6KYuN3ue7oISIc3btmoDp6enjYYbWlp0Y3Qf1UAx40hu0pLSx0yJPRz1uPxvJONo6OjhswiAZm+BBlX3yU9PT26gM/no/PrHLDpIr29vQ/U7GloaDBk10k7vrq62uDF+Pg4ZYbDIAKuzc/PD8hOdBbRUXGaI6Wmpkbs7+/rAltbW19RX2wWSQd54A6WzaV6REcFjvSYxikGtESqBwcHB7vt7e30bSngyVtl4M+AHHCrubn5+cbGxqb5tFtYWBB9fX2iu7s78pyZmYn6ciF2e62trS9hpwxcAWlqdqWA8+A6uA+ejoyMfBL/UFZWVjbr6ureYmwNuAEugtSIff4y0rpl8CWhFDjBC6fT+R4BdB8dHYXiGZ+amvJgY35A/3ZQB+iIv8pLlaR/frHpad2S2b1McJk75vPzUlVVVV5ZWdmF5ORkGw6+EL6YvyYmJlyIxyba3eA7swG2gQ8E6NSSIhoHKIWTgISyWSyH/2fyJMjrMPgNdvl6REI/gAfsgANwTCcLJYh+kWAhGwulcfplcqwyeWPZuQ8NpnNpn41uM3vsAQkEOQuNtxWTUCp7lcHPNK6zsifH7I2PZ+5j4QBPIhz3SqQsXRLHKZVFU/hd4xkGWcjPT7k8IelBwnsXC0kxK3tn4/9SJKwYDTPCLJDocmcWlPtJUy86isGERv4IMACaz3RmXeGcqwAAAABJRU5ErkJggg%3D%3D"></a><br>
+<div id="qrCode"></div>
+</div>
+</div>
+<script type="text/javascript">
+		var vglnk = { key: 'f0a7f91912ae2b52e0700f73990eb321' };
+
+		(function(d, t) {
+			var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+			s.src = '//cdn.viglink.com/api/vglnk.js';
+			var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+		}(document, 'script'));
+	</script>
+
+
+
+<style>
+	.vbulletin-editor-text-area TEXTAREA {
+		width:100%;
+		height: 315px;
+		padding:0;
+		margin:0;
+	}
+</style>
+<script data-cfasync="false" type="text/javascript">
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+			var gads = document.createElement("script");
+			gads.async = true;
+			gads.type = "text/javascript";
+			var useSSL = "https:" == document.location.protocol;
+			gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+			var node =document.getElementsByTagName("script")[0];
+			node.parentNode.insertBefore(gads, node);
+		})();
+	</script>
+<div id="div-gpt-ad-1363287890054-0-oop">
+<script data-cfasync="false" type="text/javascript">
+			googletag.cmd.push(function() {
+				googletag.defineOutOfPageSlot('/8456/IDG.XDA_ROS','div-gpt-ad-1363287890054-0-oop').addService(googletag.pubads())
+				googletag.display('div-gpt-ad-1363287890054-0-oop');
+			});
+		</script>
+</div>
+
+<script>
+		var _comscore = _comscore || [];
+		_comscore.push({ c1: "2", c2: "10055482" });
+		(function() {
+			var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+			s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+			el.parentNode.insertBefore(s, el);
+		})();
+	</script>
+<noscript>
+		<img src="http://b.scorecardresearch.com/p?c1=2&c2=10055482&cv=2.0&cj=1" />
+	</noscript>
+
+
+<script src="./XDA Forums_files/algoliasearch.min.js"></script>
+<script src="./XDA Forums_files/search.js" charset="utf-8"></script>
+
+
+
+<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>loading</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Close" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Next" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Play" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Previous" onclick="Shadowbox.previous()"></a></div></div></div></div></div><style>
+  ccc {
+  }
+
+  ccc.ccc--converted {
+    animation: ccc 0.7s ease-in-out;
+  }
+
+  @-webkit-keyframes ccc {
+    from {
+      background-color: yellow;
+    }
+
+    to {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+</style></body></html>
